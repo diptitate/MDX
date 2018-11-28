@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en"  style="overflow-x: hidden;">
+   <head>
+      <title>Login</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body style="background-image: linear-gradient(#d2d2d2, #ecf2f8); height: -webkit-fill-available;">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark bootstrap-navabr-dark">
+         <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/Logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bootstrap-nav" aria-controls="bootstrap-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bootstrap-nav">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a href="index.html" class="nav-link pl-0">Home</a></li>
+				  <li class="nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
+                  <li class="nav-item"><a href="setting.html" class="nav-link">Settings</a></li>
+                  <li class="nav-item"><a href="logout.html" class="nav-link">Login Out</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <section class="account-steps">
+         <!-- MultiStep Form -->
+         <!--<div class="row">--->
+            <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6" id="msform">
+               <!-- multistep form -->
+               <form action="" method="post">
+                  <div class="formheader">
+                     <h3>Create Account</h3>
+                     <p>You must be licensed  physician to join MDx. If a registereddoctor and do not see your registration for any reason, Please contact us at info2alavitahealth.com and we will make sure that you are able to join our community.</p>
+                     </divs>
+                  </div>
+                  <!-- progressbar -->
+                  <ul id="progressbar">
+                     <li class="active">Personal</li>
+                     <li>Professional</li>
+                     <li>Team</li>
+                  </ul>
+                  <!-- fieldsets -->
+                  <fieldset>
+                     <input type="text" name="firstname" placeholder="First Name" />
+                     <input type="text" name="lastname" placeholder="Last Name" />
+                     <input type="email" name="email" placeholder="Email" />
+                     <input type="password" name="password" placeholder="Password" />
+                     <input type="phoneno" name="phoneno" placeholder="Phone no" />
+                     <input type="gender" name="gender" placeholder="" />
+                     <input type="button" name="next" class="next action-button" value="Next" />
+                  </fieldset>
+                  <fieldset>
+                     <input type="text" name="" placeholder="Practice/Hospital/Organization" />
+                     <input type="text" name="" placeholder="Speciality" />
+                     <input type="text" name="" placeholder="Country of Practice" />
+                     <input type="text" name="" placeholder="Zip Code" />
+                     <input type="text" name="" placeholder="NPI Number/RN/NP Numbers" />
+                     <input type="text" name="" placeholder="MouthLab Provider ID " />
+                     <input type="text" name="" placeholder="License Number/Reg.Number" />
+                     <input type="text" name="" placeholder="Expiration Date" />
+                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                     <input type="button" name="next" class="next action-button" value="Next" />
+                  </fieldset>
+                  <fieldset>
+                     <!---<h2 class="fs-title">Personal Details</h2>
+                        <h3 class="fs-subtitle">We will never sell it</h3>
+                        <input type="text" name="fname" placeholder="First Name" />
+                        <input type="text" name="lname" placeholder="Last Name" />
+                        <input type="text" name="phone" placeholder="Phone" />
+                        <textarea name="address" placeholder="Address"></textarea>------>
+						<div class="addnew" style="border-radius: 25px;">
+                        <input type="image" data-toggle="modal" data-target="#myModal" src="images/ic_plus_black@2x.png" style="border-radius: 25px" />
+				
+						</div>
+								 <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Register with LearnX</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+        
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form action="#" class="probootstrap-form-appointment">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name of Institution">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Name of Contact Person">
+                                    </div>
+			                        <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Designation">
+                                    </div>
+			                        <div class="form-group">
+                                         <input type="text" class="form-control" placeholder="Contact-Phone/Email">
+                                    </div>
+
+                                    <div class="form-group submit-btn" style="border: none; background: #354e73">
+                                        <input type="submit" value="Submit" class="btn btn-secondary">
+                                    </div>
+                                </form>
+                            </div>
+        
+                            <!-- Modal footer -->
+                            <!--<div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>-------->
+        
+                        </div>
+                     </div>
+                </div>
+						
+						
+                     <table class="table ">
+                        <thead>
+                           <tr>
+                              <th>Email</th>
+                              <th>Cell</th>
+                              <th>Practice</th>
+                              <th>Speciality</th>
+                              <th>NPI/License</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>  <span class="name">Jennifer</span> </td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                           </tr>
+                           <tr>
+                              <td>  <span class="name">Joe</span> </td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                           </tr>
+                           <tr>
+                              <td>  <span class="name">Catherine</span> </td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                           </tr>
+                           <tr>
+                              <td>  <span class="name">Aniston</span> </td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                           </tr>
+                           <tr>
+                              <td>  <span class="name">Jennifer</span> </td>
+                              <td> <span class="product">COPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                           </tr>
+                           <tr>
+                              <td>  <span class="name">Joe</span> </td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                           </tr>
+                           <tr>
+                              <td>  <span class="name">Catherine</span> </td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                           </tr>
+                           <tr>
+                              <td>  <span class="name">Aniston</span> </td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                              <td> <span class="product">OPD</span> </td>
+                              <td><span class="count">Yes</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+					 <input type="button" name="previous" class="previous action-button" value="Previous" />
+                        <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                  </fieldset>
+               </form>
+            </div>
+         <!---</div>------>
+         <!-- /.MultiStep Form -->
+      </section>
+	  
+	  <footer class="bootstrap-footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h2 class="white center">eVita Patient Assessment Solution</h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md">
+                  <ul class="footer-small-nav">
+                     <li><a href="#">Contact Rapid Advantage Team - Phone:  |</a></li>
+                     <li><a href="#">Email:  |</a></li>
+                     <li><a href="#">Time:  |</a></li>
+                     <li><a href="#">After Hours Support 1-800XXX-XXX</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+	  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="js/jquery.easing.min"></script>
+      <script>
+         $(function() {
+         
+         //jQuery time
+         var current_fs, next_fs, previous_fs; //fieldsets
+         var left, opacity, scale; //fieldset properties which we will animate
+         var animating; //flag to prevent quick multi-click glitches
+         
+         $(".next").click(function(){
+         	if(animating) return false;
+         	animating = true;
+         	
+         	current_fs = $(this).parent();
+         	next_fs = $(this).parent().next();
+         	
+         	//activate next step on progressbar using the index of next_fs
+         	$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+         	
+         	//show the next fieldset
+         	next_fs.show(); 
+         	//hide the current fieldset with style
+         	current_fs.animate({opacity: 0}, {
+         		step: function(now, mx) {
+         			//as the opacity of current_fs reduces to 0 - stored in "now"
+         			//1. scale current_fs down to 80%
+         			scale = 1 - (1 - now) * 0.2;
+         			//2. bring next_fs from the right(50%)
+         			left = (now * 50)+"%";
+         			//3. increase opacity of next_fs to 1 as it moves in
+         			opacity = 1 - now;
+         			current_fs.css({'transform': 'scale('+scale+')'});
+         			next_fs.css({'left': left, 'opacity': opacity});
+         		}, 
+         		duration: 800, 
+         		complete: function(){
+         			current_fs.hide();
+         			animating = false;
+         		}, 
+         		//this comes from the custom easing plugin
+         		easing: 'easeInOutBack'
+         	});
+         });
+         
+         $(".previous").click(function(){
+         	if(animating) return false;
+         	animating = true;
+         	
+         	current_fs = $(this).parent();
+         	previous_fs = $(this).parent().prev();
+         	
+         	//de-activate current step on progressbar
+         	$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+         	
+         	//show the previous fieldset
+         	previous_fs.show(); 
+         	//hide the current fieldset with style
+         	current_fs.animate({opacity: 0}, {
+         		step: function(now, mx) {
+         			//as the opacity of current_fs reduces to 0 - stored in "now"
+         			//1. scale previous_fs from 80% to 100%
+         			scale = 0.8 + (1 - now) * 0.2;
+         			//2. take current_fs to the right(50%) - from 0%
+         			left = ((1-now) * 50)+"%";
+         			//3. increase opacity of previous_fs to 1 as it moves in
+         			opacity = 1 - now;
+         			current_fs.css({'left': left});
+         			previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+         		}, 
+         		duration: 800, 
+         		complete: function(){
+         			current_fs.hide();
+         			animating = false;
+         		}, 
+         		//this comes from the custom easing plugin
+         		easing: 'easeInOutBack'
+         	});
+         });
+         
+         $(".submit").click(function(){
+         	return false;
+         })
+         
+         });
+      </script>
+      <script type="text/javascript">
+         var _gaq = _gaq || [];
+         _gaq.push(['_setAccount', 'UA-36251023-1']);
+         _gaq.push(['_setDomainName', 'jqueryscript.net']);
+         _gaq.push(['_trackPageview']);
+         
+         (function() {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+         
+      </script>
+   </body>
+</html>
