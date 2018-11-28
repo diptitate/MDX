@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
    <head>
-      <title>Login</title>
+      <title>Create Account</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -9,7 +9,7 @@
          <link rel="stylesheet" href="css/icomoon.css">-->
       <link rel="stylesheet" href="css/style.css">
    </head>
-   <body>
+   <body style="background-image: linear-gradient(#d2d2d2, #ecf2f8); height: -webkit-fill-available;">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark bootstrap-navabr-dark">
          <div class="container">
             <a class="navbar-brand" href="index.html">Logo</a>
@@ -18,15 +18,16 @@
             </button>
             <div class="collapse navbar-collapse" id="bootstrap-nav">
                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="profile.html" class="nav-link">Home</a></li>
                   <li class="nav-item"><a href="about.html" class="nav-link">Settings</a></li>
                   <li class="nav-item"><a href="services.html" class="nav-link">Login Out</a></li>
                </ul>
             </div>
          </div>
       </nav>
+	  <section class="login-section">
       <div class="login-form">
-         <form action="/examples/actions/confirmation.php" method="post">
+         <form action="profile.html" method="post">
             <h2 class="text-center">Welcome</h2>
             <p class="center">Log in to access your account.<br>Please note that password is case sensitive.</p>
             <div class="form-group">
@@ -44,10 +45,11 @@
             </div>
             <p class="text-center">Or</p>
             <div class="form-group">
-               <p class="text-center"><a href="#">Create Account</a></p>
+               <p class="text-center"><a href="createaccount.html">Create Account</a></p>
             </div>
          </form>
       </div>
+	  </section>
       <footer class="bootstrap-footer">
          <div class="container">
             <div class="row">
