@@ -7,100 +7,84 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background: #e9e9e9">
+<body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark bootstrap-navabr-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.html">Logo</a>
+        <a class="navbar-brand" href="index.html"><img src="images/Logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bootstrap-nav"
                 aria-controls="bootstrap-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="bootstrap-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="profile.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">Settings</a></li>
-                <li class="nav-item"><a href="services.html" class="nav-link">Login Out</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="active nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="setting.html" class="nav-link">Settings</a></li>
+                <li class="nav-item"><a href="logout.html" class="nav-link">Log Out</a></li>
             </ul>
         </div>
     </div>
 </nav>
+<section class="page-navigator">
+    <div class="col-md-12 page-sections">
+
+        <div class="col-md-2 left-side-navigator">
+            <h6>Home</h6>
+        </div>
+        <div class="col-md-8 center-navigator">
+            <h6><span class="demoonly">demo</span> only, not for clinical use</h6>
+        </div>
+    </div>
+
+</section>
 
 <section>
     <!-- Right Panel -->
-    <div id="right-panel" class="right-panel">
-        <div class="breadcrumbs">
-            <div class="breadcrumbs-inner">
-                <div class="row m-0">
-                    <div class="col-sm-12">
-                        <div class="page-header float-left">
-                            <div class="page-title">
-                                <h1>Home</h1>
-                            </div>
+    <div class="container">
+        <div class="page-header">
+            <div class="page-title">
+                <button type="button" class="btn btn-info add-new" data-toggle="modal" data-target="#myModal"><i
+                        class="fa fa-plus"></i> Add New
+                </button>
+            </div>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Register</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
-                        <div class="page-header float-right">
-                            <div class="page-title">
-                                <button type="button" class="btn btn-info add-new" data-toggle="modal"
-                                        data-target="#myModal"><i class="fa fa-plus"></i> Add New
-                                </button>
-                            </div>
-                            <!-- The Modal -->
-                            <div class="modal" id="myModal">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
 
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Register with LearnX</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            <form action="#" class="probootstrap-form-appointment">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                           placeholder="Name of Institution">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control"
-                                                           placeholder="Name of Contact Person">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Designation">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                           placeholder="Contact-Phone/Email">
-                                                </div>
-
-                                                <div class="form-group submit-btn"
-                                                     style="border: none; background: #354e73">
-                                                    <input type="submit" value="Submit" class="btn btn-secondary">
-                                                </div>
-                                            </form>
-                                        </div>
-
-                                        <!-- Modal footer -->
-                                        <!--<div class="modal-footer">
-                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                        </div>-------->
-
-                                    </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="#" class="probootstrap-form-appointment">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
                                 </div>
-                            </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Name of Contact Person">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Designation">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Contact-Phone/Email">
+                                </div>
+
+                                <div class="form-group submit-btn" style="border: none; background: #354e73">
+                                    <input type="submit" value="Submit" class="btn btn-secondary">
+                                </div>
+                            </form>
                         </div>
+
                     </div>
-                    <!---<div class="col-sm-12">
-                        <div class="page-header float-right">
-                            <div class="page-title">
-                                <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
-								
-                            </div>
-                        </div>
-                    </div>----->
                 </div>
             </div>
         </div>
+
 
         <div class="content">
             <div class="animated fadeIn">
@@ -111,7 +95,7 @@
                                 <strong class="card-title">Custom Table</strong>
                             </div>
                             <div class="table-stats order-table ov-h">
-                                <table class="table ">
+                                <table class="table" id="profiles">
                                     <thead>
                                     <tr>
                                         <th class="avatar">#</th>
@@ -251,10 +235,60 @@
     </div><!-- .content -->
 </section>
 
+<section class="footer-gradient">
+</section>
+<footer class="bootstrap-footer">
+    <div class="container">
+        <div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="white center">eVita Patient Assessment Solution</p>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <ul class="footer-small-nav">
+                        <li><a href="#">Contact Rapid Advantage Team - Phone: |</a></li>
+                        <li><a href="#">Email: |</a></li>
+                        <li><a href="#">Time: |</a></li>
+                        <li><a href="#">After Hours Support 1-800XXX-XXX</a></li>
+                        <img class="footer-logo" src="images/Logo.png">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</footer>
+
+
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/popper.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $.getJSON("profile.json", function (data) {
+            var profile_data = '';
+            $.each(data, function (key, value) {
+                profile_data += '<tr>';
+                profile_data += '<td>' + value.Name + '<td>';
+                profile_data += '<td>' + value.Primary
+                Condition + '<td>';
+                profile_data += '<td>' + value.Concerning
+                Symptoms + '<td>';
+                profile_data += '<td>' + value.Action
+                Required + '<td>';
+                profile_data += '</tr>';
+            });
+            $('#profiles').append(profile_data);
+        });
+    });
+</script>
+
 </body>
 </html>  
