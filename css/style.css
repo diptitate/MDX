@@ -1211,6 +1211,12 @@ table.table .avatar {
 }
 
 /*----------------Day View-------------*/
+.p0{
+	padding: 0;
+}
+.tabs-thumbs-dayview{
+	margin: 0;
+}
 .white{
 	color: #fff;
 }
@@ -1223,19 +1229,44 @@ table.table .avatar {
 .display-readings{
 	padding-top: 80px;
 }
-.boxes{
-	
+.display-graph-section{
+	padding-top: 140px;
 }
+
 .box{
 	position: relative;
     float: left;
-    width: 140px;
+    width: 133px;
     margin: 0 10px 0 0;
     opacity: .8;
     border: 1px solid #ccc;
     background: #fff;
     padding: 0;
 	display: grid;
+}
+.patient_questionary{
+	color: #fff;
+    position: relative;
+    float: left;
+    width: 100%;
+    /* margin: 0 10px 0 0; */
+    opacity: .8;
+    border: 1px solid #ccc;
+    background: #4d4d4d;
+    padding: 15px;
+    display: grid;
+}
+.graph-and-tables{
+	width: 400px;
+}
+.graph-and-tables .line{
+	width: 300px;
+	color: #fff;
+}
+.bottom{
+	border-bottom: 1px solid #fff;
+	line-height: 2.6;
+	
 }
 #angle_down{
 	position: absolute;

@@ -118,8 +118,7 @@
 
         /* Profile Content */
         .profile-content {
-            padding: 20px;
-            min-height: 460px;
+           /*---- min-height: 460px;------*/
         }
 
         .profile-sidebar h2 {
@@ -182,7 +181,7 @@
                         <table>
                             <tr>
                                 <td>
-                                    <div class="col-md-6 justify white ">Name:</div>
+                                    <div class="col-md-6 justify white">Name:</div>
                                 </td>
                                 <td>
                                     <div class="col-md-6 justify white ">Jennifer</div>
@@ -254,10 +253,10 @@
         </div>
         <div class="col-md-9">
             <div class="profile-content">
-                Day View
+                <h3>Day View</h3>
                 <div class="col-md-12 profile-content tabs">
 
-                    <ul class="tabs-thumbs">
+                    <ul class="tabs-thumbs tabs-thumbs-dayview">
                         <li class="tabs-thumb"><a>Day</a></li>
                         <li class="tabs-thumb"><a>Week</a></li>
                         <li class="tabs-thumb"><a>Month</a></li>
@@ -266,7 +265,7 @@
 
                     <ul class="tabs-panels">
                         <li class="tabs-panel">
-                            <div class="row">
+                            <section class="">
                                     <div class="col-md-12">
 										<div class="col-md-2">
 											<label>Date:</label>
@@ -282,11 +281,29 @@
 										</div>	
 									</div>
 
-                                </div>
+                            </select>
 
 								<section  class="display-readings">
-									<div class="col-md-12">
+									<div class="col-md-12 p0">
 										<div class="boxes">
+											<div class="box">
+												<i class="fa fa-2x fa-thermometer-quarter"></i>
+												<div>
+													<table>
+														<tbody>
+                     										
+															<tr>
+																<td><div class="center">98%</div></td>
+															</tr>
+									
+															<tr>
+																<td>Temperature</td>
+															</tr>
+      													</tbody>
+													</table>
+												</div>
+											</div>
+											
 											<div class="box">
 												<i class="fa fa-2x fa-thermometer-quarter"></i>
 												<div>
@@ -296,15 +313,14 @@
 																<td><div class="center">98%</div></td>
 															</tr>
 															<tr>
-																<td>Temperature</td>
-															<tr>
+																<td><div class="center">Temperature</div></td>
+															</tr>
 														</tbody>
 													</table>
 												</div>
 											</div>
-											
 											<div class="box">
-												<i class="fa fa-thermometer-quarter"></i>
+												<i class="fa fa-2x fa-thermometer-quarter"></i>
 												<div>
 													<table>
 														<tbody>
@@ -312,14 +328,14 @@
 																<td><div class="center">98%</div></td>
 															</tr>
 															<tr>
-																<td>Temperature</td>
-															<tr>
+																<td><div class="center">Temperature</div></td>
+															</tr>
 														</tbody>
 													</table>
 												</div>
 											</div>
 											<div class="box">
-												<i class="fa fa-thermometer-quarter"></i>
+												<i class="fa fa-2x fa-thermometer-quarter"></i>
 												<div>
 													<table>
 														<tbody>
@@ -327,14 +343,14 @@
 																<td><div class="center">98%</div></td>
 															</tr>
 															<tr>
-																<td>Temperature</td>
-															<tr>
+																<td><div class="center">Temperature</div></td>
+															</tr>
 														</tbody>
 													</table>
 												</div>
 											</div>
 											<div class="box">
-												<i class="fa fa-thermometer-quarter"></i>
+												<i class="fa fa-2x fa-thermometer-quarter"></i>
 												<div>
 													<table>
 														<tbody>
@@ -342,45 +358,63 @@
 																<td><div class="center">98%</div></td>
 															</tr>
 															<tr>
-																<td>Temperature</td>
-															<tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-											<div class="box">
-												<i class="fa fa-thermometer-quarter"></i>
-												<div>
-													<table>
-														<tbody>
-															<tr>
-																<td><div class="center">98%</div></td>
+																<td><div class="center">Temperature</div></td>
 															</tr>
-															<tr>
-																<td>Temperature</td>
-															<tr>
 														</tbody>
 							
 													</table>
 												</div>
 											</div>
 											<div class="box">
-												<i class="fa fa-thermometer-quarter"></i>
+												<i class="fa fa-2x fa-thermometer-quarter"></i>
 												<div>
 													<table>
 														<tbody>
 															<tr>
-																<td>98%</td>
+																<td><div class="center">98%</div></td>
 															</tr>
 															<tr>
 																<td><div class="center">Temperature</div></td>
-															<tr>
+															</tr>
 														</tbody>
 													</table>
 												</div>
 											</div>
 										</div>
 										
+									</div>
+								</section>
+								<section class="display-graph-section">
+									<div class="col-md-12 p0">
+										<div class="graph-and-tables">
+											<div class="patient_questionary">
+												<table class="">
+													<tr class="bottom">
+														<td><div class="extraPadding">Day over day changes in weight</div></td>
+														<td>+3Ibs</td>
+			                                            <div class="line"></div>
+													<tr>
+													
+													<tr class="bottom">
+														<td><div class="extraPadding">I am having chest pain or pressure</div></td>
+														<td>Yes</td>
+													<tr>
+													<tr class="bottom">
+														<td><div class="extraPadding">I am more short of breath</div></td>
+														<td>-</td>
+													<tr>
+													<tr class="bottom">
+														<td><div class="extraPadding">I wake up in the night with shortness</div></td>
+														<td>No</td>
+													<tr>
+													<tr class="bottom">
+														<td><div class="extraPadding">I have swelling in my legs</div></td>
+														<td>No</td>
+													<tr>
+												</table>
+												
+											</div>
+										</div>
 									</div>
 								</section>
                         </li>
