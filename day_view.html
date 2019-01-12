@@ -10,310 +10,378 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-multiselect.css">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="css/daterangepicker.css" rel="stylesheet" type="text/css"/>
 
     <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/daterangepicker.js"></script>
-	  <style>
+    <style>
 
-/* Profile sidebar */
-.profile-sidebar {
-  height: 600px;
-    background: #656565;
-}
+        /* Profile sidebar */
+        .profile-sidebar {
+            height: 600px;
+            background: #656565;
+        }
 
-.patient-profile-img {
- text-align: center;
-  
-}
-.justify{
-text-align: justify;
-}
-.profile-usertitle {
-  text-align: center;
-  margin-top: 20px;
-}
+        .patient-profile-img {
+            text-align: center;
 
-.profile-usertitle-name {
-  color: #5a7391;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 7px;
-}
+        }
 
-.profile-usertitle-job {
-  text-transform: uppercase;
-  color: #5b9bd1;
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
+        .justify {
+            text-align: justify;
+        }
 
-.patient-info {
-  text-align: center;
-  margin-top: 45px;
-  margin-left: 40px;
-}
+        .profile-usertitle {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-.patient-info .btn {
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 600;
-  padding: 6px 15px;
-  margin-right: 5px;
-}
+        .profile-usertitle-name {
+            color: #5a7391;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 7px;
+        }
 
-.patient-info .btn:last-child {
-  margin-right: 0px;
-}
-    
-.profile-usermenu {
-  margin-top: 30px;
-}
+        .profile-usertitle-job {
+            text-transform: uppercase;
+            color: #5b9bd1;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
 
-.profile-usermenu ul li {
-  border-bottom: 1px solid #f0f4f7;
-}
+        .patient-info {
+            text-align: center;
+            margin-top: 45px;
+            margin-left: 40px;
+        }
 
-.profile-usermenu ul li:last-child {
-  border-bottom: none;
-}
+        .patient-info .btn {
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 6px 15px;
+            margin-right: 5px;
+        }
 
-.profile-usermenu ul li a {
-  color: #93a3b5;
-  font-size: 14px;
-  font-weight: 400;
-}
+        .patient-info .btn:last-child {
+            margin-right: 0px;
+        }
 
-.profile-usermenu ul li a i {
-  margin-right: 8px;
-  font-size: 14px;
-}
+        .profile-usermenu {
+            margin-top: 30px;
+        }
 
-.profile-usermenu ul li a:hover {
-  background-color: #fafcfd;
-  color: #5b9bd1;
-}
+        .profile-usermenu ul li {
+            border-bottom: 1px solid #f0f4f7;
+        }
 
-.profile-usermenu ul li.active {
-  border-bottom: none;
-}
+        .profile-usermenu ul li:last-child {
+            border-bottom: none;
+        }
 
-.profile-usermenu ul li.active a {
-  color: #5b9bd1;
-  background-color: #f6f9fb;
-  border-left: 2px solid #5b9bd1;
-  margin-left: -2px;
-}
+        .profile-usermenu ul li a {
+            color: #93a3b5;
+            font-size: 14px;
+            font-weight: 400;
+        }
 
-/* Profile Content */
-.profile-content {
-  padding: 20px;
-  background: #fff;
-  min-height: 460px;
-}
-.profile-sidebar h2{
-	text-align: center;
-	color: #fff
-}
-tr, td{
-color: #fff;}
-	</style>  
-   </head>
-   <body style="background: #f1f1f1">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bootstrap-navabr-dark">
-         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="images/Logo.png"  class="brand"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bootstrap-nav" aria-controls="bootstrap-nav" aria-expanded="false" aria-label="Toggle navigation">
+        .profile-usermenu ul li a i {
+            margin-right: 8px;
+            font-size: 14px;
+        }
+
+        .profile-usermenu ul li a:hover {
+            background-color: #fafcfd;
+            color: #5b9bd1;
+        }
+
+        .profile-usermenu ul li.active {
+            border-bottom: none;
+        }
+
+        .profile-usermenu ul li.active a {
+            color: #5b9bd1;
+            background-color: #f6f9fb;
+            border-left: 2px solid #5b9bd1;
+            margin-left: -2px;
+        }
+
+        /* Profile Content */
+        .profile-content {
+            padding: 20px;
+            background: #fff;
+            min-height: 460px;
+        }
+
+        .profile-sidebar h2 {
+            text-align: center;
+            color: #fff
+        }
+
+        tr, td {
+            color: #fff;
+        }
+    </style>
+</head>
+<body style="background: #f1f1f1">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bootstrap-navabr-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/Logo.png" class="brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bootstrap-nav"
+                aria-controls="bootstrap-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="bootstrap-nav">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        </button>
+        <div class="collapse navbar-collapse" id="bootstrap-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 
-                  <li class="nav-item"><a href="setting.html" class="nav-link">Settings</a></li>
-                  <li class="nav-item"><a href="logout.html" class="nav-link">Log Out</a></li>
-               </ul>
-            </div>
-         </div>
-    </nav>
-	<section class="page-navigator">
-        <div class="col-md-12 page-sections">
+                <li class="nav-item"><a href="setting.html" class="nav-link">Settings</a></li>
+                <li class="nav-item"><a href="logout.html" class="nav-link">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="page-navigator">
+    <div class="col-md-12 page-sections">
 
-            <div class="col-md-2 left-side-navigator">
-                <p>Login</p>
-            </div>
-            <div class="col-md-8 center-navigator">
-                <p><span class="demoonly">demo</span> only, not for clinical use</p>
+        <div class="col-md-2 left-side-navigator">
+            <p>Login</p>
+        </div>
+        <div class="col-md-8 center-navigator">
+            <p><span class="demoonly">demo</span> only, not for clinical use</p>
+        </div>
+    </div>
+
+</section>
+
+<section>
+
+    <div class="row profile">
+        <div class="col-md-3">
+            <div class="profile-sidebar">
+                <!-- SIDEBAR USERPIC -->
+                <div class="row">
+
+                    <h2>Profile</h2>
+                    <div class="patient-profile-img">
+                        <img src="images/Faces/Family-Female@2x.png" class="" alt=""/>
+
+                    </div>
+                    <!-- END SIDEBAR USERPIC -->
+                </div>
+
+                <div class="row">
+                    <!-- SIDEBAR Info-Table -->
+                    <div class="patient-info col-md-12">
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="col-md-6 justify">Name:</div>
+                                </td>
+                                <td>
+                                    <div class="col-md-6 justify">Jennifer</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="col-md-6 justify">Medical Records#:</div>
+                                </td>
+                                <td>
+                                    <div class="col-md-6 justify">4356009</div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="col-md-6 justify">Age:</div>
+                                </td>
+                                <td>
+                                    <div class="col-md-6 justify">30</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="col-md-6 justify">Gender:</div>
+                                </td>
+                                <td>
+                                    <div class="col-md-6 justify">Female</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="col-md-6 justify">Primary Condition:</div>
+                                </td>
+                                <td>
+                                    <div class="col-md-6 justify">#hfjdjkg</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="col-md-6 justify">Secondary Condition:</div>
+                                </td>
+                                <td>
+                                    <div class="col-md-6 justify">#hfjdjkg</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="col-md-6 justify">Ternary Condition:</div>
+                                </td>
+                                <td>
+                                    <div class="col-md-6 justify">#hfjdjkg</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- END Info-Table -->
+                </div>
+                <div class="row margin-top-05">
+                    <div class="col-md-12 login-timer text-center">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <label id="login_hours">00</label>:<label
+                            id="login_minutes">00</label>:<label
+                            id="login_seconds">00</label>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="col-md-9">
+            <div class="profile-content">
+                Day View
+                <div class="col-md-12 profile-content tabs">
 
-    </section>
-		
-    <section>
+                    <ul class="tabs-thumbs">
+                        <li class="tabs-thumb"><a>Day</a></li>
+                        <li class="tabs-thumb"><a>Week</a></li>
+                        <li class="tabs-thumb"><a>Month</a></li>
+                    </ul>
+                    <div class="col-lg-12 col-md-12 extrabar"></div>
 
-		<div class="row profile">
-			<div class="col-md-3">
-				<div class="profile-sidebar">
-					<!-- SIDEBAR USERPIC -->
-					<div class="row">
-						
-						<h2>Profile</h2>
-						<div class="patient-profile-img">
-							<img src="images/Faces/Family-Female@2x.png" class="" alt="" />
-							
-						</div>
-					<!-- END SIDEBAR USERPIC -->
-					</div>
-					
-					<div class="row">
-					<!-- SIDEBAR Info-Table -->
-					<div class="patient-info col-md-12">
-						
-						<table>
-							<tr>
-								<td><div class="col-md-6 justify">Name:</div></td>
-								<td><div class="col-md-6 justify">Jennifer</div></td>
-							</tr>
-							<tr>
-								<td><div class="col-md-6 justify">Medical Records#:</div></td>
-								<td><div class="col-md-6 justify">4356009</div></td>
-								
-							</tr>
-							<tr>						
-								<td><div class="col-md-6 justify">Age:</div></td>
-								<td><div class="col-md-6 justify">30</div></td>
-							</tr>
-							<tr>						
-								<td><div class="col-md-6 justify">Gender:</div></td>
-								<td><div class="col-md-6 justify">Female</div></td>
-							</tr>
-							<tr>						
-								<td><div class="col-md-6 justify">Primary Condition:</div></td>
-								<td><div class="col-md-6 justify">#hfjdjkg</div></td>
-							</tr>
-							<tr>						
-								<td><div class="col-md-6 justify">Secondary Condition:</div></td>
-								<td><div class="col-md-6 justify">#hfjdjkg</div></td>
-							</tr>
-							<tr>						
-								<td><div class="col-md-6 justify">Ternary Condition:</div></td>
-								<td><div class="col-md-6 justify">#hfjdjkg</div></td>
-							</tr>
-						</table>
-					</div>
-					<!-- END Info-Table -->
-					</div>
-				</div>
-			</div>
-			<div class="col-md-9">
-				<div class="profile-content">
-				   Day View
-				    <div class="col-md-12 profile-content tabs">
-            
-                        <ul class="tabs-thumbs">
-                            <li class="tabs-thumb"><a>Day</a></li>
-                            <li class="tabs-thumb"><a>Week</a></li>
-                            <li class="tabs-thumb"><a>Month</a></li>
-                        </ul>
-                        <div class="col-lg-12 col-md-12 extrabar"></div>
-						
-						<ul class="tabs-panels">
-                            <li class="tabs-panel">
-                                <div class="row">
-                                    <div class="col-md-12">
-										<div class="">
-										<label>Date:</label>
-										<input type="text" id="demo" class="form-control">
-										</div>
-									</div>
-
+                    <ul class="tabs-panels">
+                        <li class="tabs-panel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="">
+                                        <label>Date:</label>
+                                        <input type="text" id="demo" class="form-control">
+                                    </div>
                                 </div>
 
-                            </li>
-						</ul>
-                       
-					</div>	
-				</div>	
-				
-			</div>
-		</div>
+                            </div>
 
-	</section>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
 
 <footer class="bootstrap-footer">
-			<div class="container">
-				<div>
-					<div class="row">
-					   <div class="col-md-12">
-						  <p class="white center">eVita Patient Assessment Solution</p>
-						  
-					   </div>
-					   
-					</div>
-					<div class="row">
-					   <div class="col-md">
-						  <ul class="footer-small-nav">
-							 <li><a href="#">Contact Rapid Advantage Team - Phone:  |</a></li>
-							 <li><a href="#">Email:  |</a></li>
-							 <li><a href="#">Time:  |</a></li>
-							 <li><a href="#">After Hours Support 1-800XXX-XXX</a></li>
-							 <img class="footer-logo" src="images/Logo.png">
-						  </ul>
-					   </div>
-					</div>
-				</div>
-			</div>
+    <div class="container">
+        <div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="white center">eVita Patient Assessment Solution</p>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <ul class="footer-small-nav">
+                        <li><a href="#">Contact Rapid Advantage Team - Phone: |</a></li>
+                        <li><a href="#">Email: |</a></li>
+                        <li><a href="#">Time: |</a></li>
+                        <li><a href="#">After Hours Support 1-800XXX-XXX</a></li>
+                        <img class="footer-logo" src="images/Logo.png">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-   
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script src="js/moment.min.js"></script>
-	<script src="js/daterangepicker.js"></script>
-	
-    <script>
-        $(function() {
-            // Active the first thumb & panel
-            $(".tabs-thumb:first-child").addClass("is-active").closest(".tabs").find(".tabs-panel:first-child").show();
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
-            $(".tabs-thumb").click(function() {
-                // Cancel the siblings
-                $(this).siblings(".tabs-thumb").removeClass("is-active").closest(".tabs").find(".tabs-panel").hide();
-                // Active the thumb & panel
-                $(this).addClass("is-active").closest(".tabs").find(".tabs-panel").eq($(this).index(".tabs-thumb")).show();
-            });
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+
+<script>
+    $(function () {
+        // Active the first thumb & panel
+        $(".tabs-thumb:first-child").addClass("is-active").closest(".tabs").find(".tabs-panel:first-child").show();
+
+        $(".tabs-thumb").click(function () {
+            // Cancel the siblings
+            $(this).siblings(".tabs-thumb").removeClass("is-active").closest(".tabs").find(".tabs-panel").hide();
+            // Active the thumb & panel
+            $(this).addClass("is-active").closest(".tabs").find(".tabs-panel").eq($(this).index(".tabs-thumb")).show();
         });
+    });
 
-        $('#demo').daterangepicker({
-	        "timePicker": true,
-	        "ranges"    : {
-	            "Today"       : [new Date, new Date],
-	            "Yesterday"   : [moment().subtract(1, "days"), moment().subtract(1, "days")],
-	            "Last 7 Days" : [moment().subtract(6, "days"), new Date],
-	            "Last 30 Days": [moment().subtract(29, "days"), new Date],
-	            "This Month"  : [moment().startOf("month"), moment().endOf("month")],
-	            "Last Month"  : [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")]
-	        },
-	        "startDate" : moment().startOf('hour') - 2,
-	        "endDate"   : moment().startOf('hour').add(32, 'hour'),
-	        locale      : {
-	            format: 'YYYY-MM-DD hh:mm A'
-	        }
-	    }, function (start, end, label) {
-	        console.log(start);
-	        console.log(end);
-	        console.log(label);
-	        console.log("New date range selected: '" + start.format('YYYY-MM-DD') + " '" + start.format('hh:mm') + "to '" + end.format('YYYY-MM-DD') + " '" + end.format('hh:mm') + "' (predefined range: '" + label + "')");
-	    });
-    </script>
-	  
-   </body>
+    /*Date and time Picker Code*/
+    $('#demo').daterangepicker({
+        "timePicker": true,
+        "ranges"    : {
+            "Today"       : [new Date, new Date],
+            "Yesterday"   : [moment().subtract(1, "days"), moment().subtract(1, "days")],
+            "Last 7 Days" : [moment().subtract(6, "days"), new Date],
+            "Last 30 Days": [moment().subtract(29, "days"), new Date],
+            "This Month"  : [moment().startOf("month"), moment().endOf("month")],
+            "Last Month"  : [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")]
+        },
+        "startDate" : moment().startOf('hour') - 2,
+        "endDate"   : moment().startOf('hour').add(32, 'hour'),
+        locale      : {
+            format: 'YYYY-MM-DD hh:mm A'
+        }
+    }, function (start, end, label) {
+        console.log(start);
+        console.log(end);
+        console.log(label);
+        console.log("New date range selected: '" + start.format('YYYY-MM-DD') + " '" + start.format('hh:mm') + "to '" + end.format('YYYY-MM-DD') + " '" + end.format('hh:mm') + "' (predefined range: '" + label + "')");
+    });
+
+    /*Login Count Up Timer*/
+    var minutesLabel = document.getElementById("login_minutes");
+    var secondsLabel = document.getElementById("login_seconds");
+    var hoursLabel = document.getElementById("login_hours");
+    var totalSeconds = 0;
+    setInterval(setTime, 1000);
+
+    function setTime() {
+        ++totalSeconds;
+        secondsLabel.innerHTML = pad(totalSeconds % 60);
+        minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+        hoursLabel.innerHTML = pad(parseInt(totalSeconds / 3600));
+    }
+
+    function pad(val) {
+        var valString = val + "";
+        if (valString.length < 2) {
+            return "0" + valString;
+        } else {
+            return valString;
+        }
+    }
+</script>
+
+</body>
 </html>
