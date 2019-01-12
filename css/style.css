@@ -1242,6 +1242,7 @@ table.table .avatar {
     padding: 0;
     display: grid;
 }
+<<<<<<< HEAD
 
 #angle_down {
     position: absolute;
@@ -1250,6 +1251,41 @@ table.table .avatar {
 
 }
 
+=======
+/*----------------Day View-------------*/
+.white{
+	color: #fff;
+}
+.flex{
+	display: inline-flex;
+}
+.tab-thumbs-view{
+	margin: 0px;
+}
+.display-readings{
+	padding-top: 80px;
+}
+.boxes{
+	
+}
+.box{
+	position: relative;
+    float: left;
+    width: 140px;
+    margin: 0 10px 0 0;
+    opacity: .8;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 0;
+	display: grid;
+}
+#angle_down{
+	position: absolute;
+    left: 28%;
+    top: 24%;
+	
+}
+>>>>>>> c68c724a91d051736c37b611388a066b2d6db2a7
 /*------footer gradient-------------*/
 .footer-gradient {
     padding: 5px 0px;
