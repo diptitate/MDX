@@ -116,15 +116,15 @@ text-align: justify;
 /* Profile Content */
 .profile-content {
   padding: 20px;
-  background: #fff;
+ /*--- background: #fff;-------*/
   min-height: 460px;
 }
 .profile-sidebar h2{
 	text-align: center;
 	color: #fff
 }
-tr, td{
-color: #fff;}
+/*---tr, td{
+color: #fff;}---------*/
 	</style>  
    </head>
    <body style="background: #f1f1f1">
@@ -159,7 +159,7 @@ color: #fff;}
 		
     <section>
 
-		<div class="row profile">
+		<div class="row allviews">
 			<div class="col-md-3">
 				<div class="profile-sidebar">
 					<!-- SIDEBAR USERPIC -->
@@ -179,33 +179,33 @@ color: #fff;}
 						
 						<table>
 							<tr>
-								<td><div class="col-md-6 justify">Name:</div></td>
-								<td><div class="col-md-6 justify">Jennifer</div></td>
+								<td><div class="col-md-6 justify white">Name:</div></td>
+								<td><div class="col-md-6 justify white">Jennifer</div></td>
 							</tr>
 							<tr>
-								<td><div class="col-md-6 justify">Medical Records#:</div></td>
-								<td><div class="col-md-6 justify">4356009</div></td>
+								<td><div class="col-md-6 justify white">Medical Records#:</div></td>
+								<td><div class="col-md-6 justify white">4356009</div></td>
 								
 							</tr>
 							<tr>						
-								<td><div class="col-md-6 justify">Age:</div></td>
-								<td><div class="col-md-6 justify">30</div></td>
+								<td><div class="col-md-6 justify white">Age:</div></td>
+								<td><div class="col-md-6 justify white">30</div></td>
 							</tr>
 							<tr>						
-								<td><div class="col-md-6 justify">Gender:</div></td>
-								<td><div class="col-md-6 justify">Female</div></td>
+								<td><div class="col-md-6 justify white">Gender:</div></td>
+								<td><div class="col-md-6 justify white">Female</div></td>
 							</tr>
 							<tr>						
-								<td><div class="col-md-6 justify">Primary Condition:</div></td>
-								<td><div class="col-md-6 justify">#hfjdjkg</div></td>
+								<td><div class="col-md-6 justify white">Primary Condition:</div></td>
+								<td><div class="col-md-6 justify white">#hfjdjkg</div></td>
 							</tr>
 							<tr>						
-								<td><div class="col-md-6 justify">Secondary Condition:</div></td>
-								<td><div class="col-md-6 justify">#hfjdjkg</div></td>
+								<td><div class="col-md-6 justify white">Secondary Condition:</div></td>
+								<td><div class="col-md-6 justify white">#hfjdjkg</div></td>
 							</tr>
 							<tr>						
-								<td><div class="col-md-6 justify">Ternary Condition:</div></td>
-								<td><div class="col-md-6 justify">#hfjdjkg</div></td>
+								<td><div class="col-md-6 justify white">Ternary Condition:</div></td>
+								<td><div class="col-md-6 justify white">#hfjdjkg</div></td>
 							</tr>
 						</table>
 					</div>
@@ -215,10 +215,10 @@ color: #fff;}
 			</div>
 			<div class="col-md-9">
 				<div class="profile-content">
-				   Day View
+				   <h3>Day View</h3>
 				    <div class="col-md-12 profile-content tabs">
             
-                        <ul class="tabs-thumbs">
+                        <ul class="tabs-thumbs tab-thumbs-view">
                             <li class="tabs-thumb"><a>Day</a></li>
                             <li class="tabs-thumb"><a>Week</a></li>
                             <li class="tabs-thumb"><a>Month</a></li>
@@ -229,14 +229,121 @@ color: #fff;}
                             <li class="tabs-panel">
                                 <div class="row">
                                     <div class="col-md-12">
-										<div class="">
-										<label>Date:</label>
-										<input type="text" id="demo" class="form-control">
+										<div class="col-md-2">
+											<label>Date:</label>
 										</div>
+										<div class="col-md-10">
+											<div class="flex">
+											<button><i class="fa fa-calendar"></i></button>
+											<input type="text" id="demo" class="form-control">
+											<!---<select></select>
+											<div id="demo" class="form-control"></div>----->
+											<i class="fa fa-angle-down" id="angle_down"></i>
+											
+										</div>	
 									</div>
 
                                 </div>
 
+								<section  class="display-readings">
+									<div class="col-md-12">
+										<div class="boxes">
+											<div class="box">
+												<i class="fa fa-2x fa-thermometer-quarter"></i>
+												<div>
+													<table>
+														<tbody>
+															<tr>
+																<td><div class="center">98%</div></td>
+															</tr>
+															<tr>
+																<td>Temperature</td>
+															<tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											
+											<div class="box">
+												<i class="fa fa-thermometer-quarter"></i>
+												<div>
+													<table>
+														<tbody>
+															<tr>
+																<td><div class="center">98%</div></td>
+															</tr>
+															<tr>
+																<td>Temperature</td>
+															<tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="box">
+												<i class="fa fa-thermometer-quarter"></i>
+												<div>
+													<table>
+														<tbody>
+															<tr>
+																<td><div class="center">98%</div></td>
+															</tr>
+															<tr>
+																<td>Temperature</td>
+															<tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="box">
+												<i class="fa fa-thermometer-quarter"></i>
+												<div>
+													<table>
+														<tbody>
+															<tr>
+																<td><div class="center">98%</div></td>
+															</tr>
+															<tr>
+																<td>Temperature</td>
+															<tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="box">
+												<i class="fa fa-thermometer-quarter"></i>
+												<div>
+													<table>
+														<tbody>
+															<tr>
+																<td><div class="center">98%</div></td>
+															</tr>
+															<tr>
+																<td>Temperature</td>
+															<tr>
+														</tbody>
+							
+													</table>
+												</div>
+											</div>
+											<div class="box">
+												<i class="fa fa-thermometer-quarter"></i>
+												<div>
+													<table>
+														<tbody>
+															<tr>
+																<td>98%</td>
+															</tr>
+															<tr>
+																<td><div class="center">Temperature</div></td>
+															<tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</section>								
                             </li>
 						</ul>
                        
