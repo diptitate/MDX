@@ -7377,8 +7377,8 @@
                 buttonImage = this._get(inst, "buttonImage");
                 inst.trigger = $(this._get(inst, "buttonImageOnly") ?
                     $("<img/>").addClass(this._triggerClass).attr({
-                        src  : buttonImage,
-                        alt  : buttonText,
+                        src: buttonImage,
+                        alt: buttonText,
                         title: buttonText
                     }) :
                     $("<button type='button'></button>").addClass(this._triggerClass).html(!buttonImage ? buttonText : $("<img/>").attr(
@@ -7930,7 +7930,7 @@
             inst.dpDiv.css({
                 position                                                 : ($.datepicker._inDialog && $.blockUI ?
                     "static" : (isFixed ? "fixed" : "absolute")), display: "none",
-                left                                                     : offset.left + "px", top                            : offset.top + "px"
+                left                                                     : offset.left + "px", top: offset.top + "px"
             });
 
             if (!inst.inline) {

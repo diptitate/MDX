@@ -563,7 +563,7 @@ textarea {
 
 .doctors-profile {
     border-radius: 50%;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .doctors-details {
@@ -1210,82 +1210,6 @@ table.table .avatar {
     background: #f5f5f5;
 }
 
-/*----------------Day View-------------*/
-.white {
-    color: #fff;
-}
-
-.flex {
-    display: inline-flex;
-}
-
-.tab-thumbs-view {
-    margin: 0px;
-}
-
-.display-readings {
-    padding-top: 80px;
-}
-
-.boxes {
-
-}
-
-.box {
-    position: relative;
-    float: left;
-    width: 140px;
-    margin: 0 10px 0 0;
-    opacity: .8;
-    border: 1px solid #ccc;
-    background: #fff;
-    padding: 0;
-    display: grid;
-}
-<<<<<<< HEAD
-
-#angle_down {
-    position: absolute;
-    left: 28%;
-    top: 24%;
-
-}
-
-=======
-/*----------------Day View-------------*/
-.white{
-	color: #fff;
-}
-.flex{
-	display: inline-flex;
-}
-.tab-thumbs-view{
-	margin: 0px;
-}
-.display-readings{
-	padding-top: 80px;
-}
-.boxes{
-	
-}
-.box{
-	position: relative;
-    float: left;
-    width: 140px;
-    margin: 0 10px 0 0;
-    opacity: .8;
-    border: 1px solid #ccc;
-    background: #fff;
-    padding: 0;
-	display: grid;
-}
-#angle_down{
-	position: absolute;
-    left: 28%;
-    top: 24%;
-	
-}
->>>>>>> c68c724a91d051736c37b611388a066b2d6db2a7
 /*------footer gradient-------------*/
 .footer-gradient {
     padding: 5px 0px;
@@ -1311,6 +1235,11 @@ table.table .avatar {
     margin: 2px 0;
     padding: 4px;
     width: 19em;
+}
+
+/*login timer*/
+.login-timer {
+    color: #fff;
 }
 
 @media (min-width: 768px) {
