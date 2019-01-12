@@ -1242,7 +1242,6 @@ table.table .avatar {
     padding: 0;
     display: grid;
 }
-<<<<<<< HEAD
 
 #angle_down {
     position: absolute;
@@ -1251,7 +1250,6 @@ table.table .avatar {
 
 }
 
-=======
 /*----------------Day View-------------*/
 .white{
 	color: #fff;
@@ -1285,7 +1283,6 @@ table.table .avatar {
     top: 24%;
 	
 }
->>>>>>> c68c724a91d051736c37b611388a066b2d6db2a7
 /*------footer gradient-------------*/
 .footer-gradient {
     padding: 5px 0px;
