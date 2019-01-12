@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="http://phuonghuynh.github.io/js/bower_components/d3/d3.min.js"></script>
+    <script src="http://phuonghuynh.github.io/js/bower_components/d3-transform/src/d3-transform.js"></script>
+    <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/extarray.js"></script>
+    <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/misc.js"></script>
+    <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/micro-observer.js"></script>
+    <script src="http://phuonghuynh.github.io/js/bower_components/microplugin/src/microplugin.js"></script>
+    <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/bubble-chart.js"></script>
+    <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
+    <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
+
+    <style type="text/css">
+        .bubbleChart {
+
+        }
+
+        .bubblegrap {
+            padding: 345px 0px 0px 0px;
+        }
+
+        .bubbleChart svg {
+            position: absolute;
+            bottom: 0px;
+            height: 400px;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        td > div {
+            border-style: solid;
+            border-color: #ddd;
+            border-width: 1px 0;
+            /* now, here you can add the margin */
+            margin-bottom: 10px;
+            /* just some nice padding, you don't really need this */
+            padding: 10px;
+        }
+
+        .extraPadding {
+            padding: 16px
+        }
+
+        .extraPaddingLast {
+            padding: 8px
+        }
+
+        table.table tr th, table.table tr td {
+            padding: 0;
+        }
+
+        .high-alert td:first-child div {
+            border-radius: 2px;
+            border-left: 6px solid #EB4000;
+        }
+
+        .medium-alert td:first-child div {
+            border-radius: 2px;
+            border-left: 6px solid #0093C7;
+        }
+
+        .low-alert td:first-child div {
+            border-radius: 2px;
+            border-left: 6px solid #C8C8C8;
+        }
+
+        td:first-child div {
+            /* just side borders on first and last elements */
+            border-left-width: 1px;
+        }
+
+        td:last-child div {
+            border-radius: 2px;
+            /* just side borders on first and last elements */
+            border-right-width: 1px;
+        }
+
+        .parent {
+            /*position:fixed;*/
+            width: auto;
+            height: auto;
+            display: inline-flex;
+            background: #f9f9f9;
+            box-shadow: 0 0px 1px 0 #656565, 0 1px 1px 1px #f7f7f7;
+        }
+
+        .switch_3_ways {
+            margin: auto;
+            /*font-size:1em;*/
+            /*font-family:sintony;*/
+            height: 2em;
+            line-height: 2em;
+            border-radius: 0.5em;
+            background: #f9f9f9;
+            position: relative;
+            display: block;
+            float: left;
+        }
+
+        .switch.low,
+        .switch.medium,
+        .switch.high {
+            cursor: pointer;
+            position: relative;
+            display: block;
+            float: left;
+            padding: 0 0.5em;
+            -webkit-transition: 300ms ease-out;
+            -moz-transition: 300ms ease-out;
+            transition: 300ms ease-out;
+        }
+
+        .switch.active {
+            color: white;
+            border-radius: 0.3em;
+            -moz-box-shadow: 0px 0px 7px 1px #656565;
+            -webkit-box-shadow: 0px 0px 7px 1px #656565;
+            -o-box-shadow: 0px 0px 7px 1px #656565;
+            box-shadow: 0px 0px 7px 1px #656565;
+            filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=7);
+        }
+
+        .switch.low.active {
+            background-color: #c8c8c8;
+        }
+
+        .switch.medium.active {
+            background-color: #4a95cc;
+        }
+
+        .switch.high.active {
+            background-color: #e6412c;
+        }
+
+        .face-padding {
+            padding: 4px 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bootstrap-navabr-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/Logo.png" class="brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bootstrap-nav"
+                aria-controls="bootstrap-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="bootstrap-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="active nav-item"><a href="index.html" class="nav-link">Home</a></li>
+
+                <li class="nav-item"><a href="setting.html" class="nav-link">Settings</a></li>
+                <li class="nav-item"><a href="logout.html" class="nav-link">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="page-navigator">
+    <div class="col-md-12 page-sections">
+
+        <div class="col-md-2 left-side-navigator">
+            <p>Home</p>
+        </div>
+        <div class="col-md-8 center-navigator">
+            <p><span class="demoonly">demo</span> only, not for clinical use</p>
+        </div>
+    </div>
+
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-12 doctors">
+                    <img src="images/Faces/Doctor_male@3x.png" width="100px" height="100px" class="doctors-profile">
+                    <div class="doctors-details">
+                        <p class="doctors-msg">Hello, <span class="doctors-nm">Dr.Smith!</span></p>
+                        <p class="speciality">Cardiologist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="rating-container">
+            <div class="walk-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 34 34">
+                    <circle cx="16" cy="16" r="15.9155" class="rating-progress-background"/>
+                    <circle cx="16" cy="16" r="15.9155" class="rating-progress js-rating-progress"/>
+                </svg>
+                <!---<div class="walk-icon"><i class="fa fa-user" aria-hidden="true"></i></div>---->
+                <div class="walk-text"><a href="#">High Alert</a></div>
+                <div id="walk-score"></div>
+            </div>
+
+            <div class="transit-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 34 34">
+                    <circle cx="16" cy="16" r="15.9155" class="rating-progress-background"/>
+                    <circle cx="16" cy="16" r="15.9155" class="rating-progress js-rating-progress"
+                            style="stroke-dashoffset: 50"/>
+                </svg>
+                <!---<div class="transit-icon"><i class="fa fa-bus" aria-hidden="true"></i></div>---->
+                <div class="transit-text"><a href="#">Medium Alert</a></div>
+                <div id="transit-score"></div>
+            </div>
+
+            <div class="bike-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 34 34">
+                    <circle cx="16" cy="16" r="15.9155" class="rating-progress-background"/>
+                    <circle cx="16" cy="16" r="15.9155" class="rating-progress js-rating-progress"/>
+                </svg>
+                <!----<div class="bike-icon"><i class="fa fa-bicycle" aria-hidden="true"></i></div>------>
+                <div class="bike-text"><a href="#">Low Alert</a></div>
+                <div id="bike-score"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!---<h2>Manage <b>Employees</b></h2>------>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <!---<a href="#addEmployeeModal" class="" data-toggle="modal"><img class="rounded-circle btn-add" src="images/plus.png" alt=""></a>
+                        <h2 class="add-ct-btn"><button type="button" class="btn btn-circle btn-lg btn-success waves-effect waves-dark">+</button></h2>------>
+
+                        <a href="#addEmployeeModal" class="" data-toggle="modal">
+                            <button type="button" class="rounded-circle btn-add">+</button>
+                        </a>
+                        <div class="search-box">
+                            <i class="material-icons">&#xE8B6;</i>
+                            <input type="text" class="form-control" placeholder="Search&hellip;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-hover table-style bordered">
+                <thead>
+                <tr>
+                    <th rowspan="2"></th>
+                    <th rowspan="2">Med.Record #</th>
+                    <th rowspan="2">Name</th>
+                    <th rowspan="2">Age</th>
+                    <th colspan="3" class="center">Condition</th>
+                    <th rowspan="2">Concerning Symptoms</th>
+                    <th rowspan="2" style="border-radius: 0 10px 10px 0;">Alert Status</th>
+                </tr>
+                <tr>
+                    <th>Pri.</th>
+                    <th>Sec.</th>
+                    <th>Ter.</th>
+                </tr>
+
+                </thead>
+                <tbody>
+
+                <tr class="mb-3 high-alert">
+
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1099875462</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Jeniffer</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">34</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP, High Temp</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <!-- <div class="round-img">
+                                <a href="#"><img class="on-switch-button" src="images/On.png" alt=""></a>
+                            </div> -->
+                            <div class="parent">
+                                <div class="switch_3_ways" style="background: #f7f7f7">
+                                    <div id="low_1" class="switch low" onclick="change_period('low', 1)">L</div>
+                                    <div id="medium_1" class="switch medium" onclick="change_period('medium', 1)">M
+                                    </div>
+                                    <div id="high_1" class="switch high active" onclick="change_period('high', 1)">H
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr class="high-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1087532456</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Joe</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">44</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High Heart Rt.</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <!----<div class="round-img">
+                                <a href="#"><img class="on-switch-button" src="images/On.png" alt=""></a>
+                            </div>------->
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_2" class="switch low" onclick="change_period('low', 2)">L</div>
+                                    <div id="medium_2" class="switch medium" onclick="change_period('medium', 2)">M
+                                    </div>
+                                    <div id="high_2" class="switch high active" onclick="change_period('high', 2)">H
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="medium-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/MAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1342569857</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Catherine</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">46</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_3" class="switch low" onclick="change_period('low', 3)">L</div>
+                                    <div id="medium_3" class="switch medium active"
+                                         onclick="change_period('medium', 3)">M
+                                    </div>
+                                    <div id="high_3" class="switch high" onclick="change_period('high', 3)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="medium-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1962478952</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Aniston</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">65</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High Heart Rt.</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_4" class="switch low" onclick="change_period('low', 4)">L</div>
+                                    <div id="medium_4" class="switch medium active"
+                                         onclick="change_period('medium', 4)">M
+                                    </div>
+                                    <div id="high_4" class="switch high" onclick="change_period('high', 4)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="medium-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/MAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1963245785</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Welma</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">56</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">DIABETIES</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_5" class="switch low" onclick="change_period('low', 5)">L</div>
+                                    <div id="medium_5" class="switch medium active"
+                                         onclick="change_period('medium', 5)">M
+                                    </div>
+                                    <div id="high_5" class="switch high" onclick="change_period('high', 5)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="medium-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1132556234</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Ramya</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">44</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High Heart Rt.</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_6" class="switch low" onclick="change_period('low', 6)">L</div>
+                                    <div id="medium_6" class="switch medium active"
+                                         onclick="change_period('medium', 6)">M
+                                    </div>
+                                    <div id="high_6" class="switch high" onclick="change_period('high', 6)">H</div>
+                                </div>
+                            </div>
+                    </td>
+                </tr>
+                <tr class="medium-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/MAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1342569857</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Morsal</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">67</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_7" class="switch low" onclick="change_period('low', 7)">L</div>
+                                    <div id="medium_7" class="switch medium active"
+                                         onclick="change_period('medium', 7)">M
+                                    </div>
+                                    <div id="high_7" class="switch high" onclick="change_period('high', 7)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1962478952</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Jamie</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">70</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High Heart Rt.</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_8" class="switch low active" onclick="change_period('low', 8)">L</div>
+                                    <div id="medium_8" class="switch medium" onclick="change_period('medium', 8)">M
+                                    </div>
+                                    <div id="high_8" class="switch high" onclick="change_period('high', 8)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1963245785</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">John</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">68</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_9" class="switch low active" onclick="change_period('low', 9)">L</div>
+                                    <div id="medium_9" class="switch medium" onclick="change_period('medium', 9)">M
+                                    </div>
+                                    <div id="high_9" class="switch high" onclick="change_period('high', 9)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/MAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1099875462</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Jeniffer</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">34</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP, High Temp</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_10" class="switch low active" onclick="change_period('low', 10)">L</div>
+                                    <div id="medium_10" class="switch medium" onclick="change_period('medium', 10)">M
+                                    </div>
+                                    <div id="high_10" class="switch high" onclick="change_period('high', 10)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/MAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1087532456</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Joe</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">44</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High Heart Rt.</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_11" class="switch low active" onclick="change_period('low', 11)">L</div>
+                                    <div id="medium_11" class="switch medium" onclick="change_period('medium', 11)">M
+                                    </div>
+                                    <div id="high_11" class="switch high" onclick="change_period('high', 11)">H</div>
+                                </div>
+                            </div>
+                    </td>
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1342569857</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Catherine</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">46</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_12" class="switch low active" onclick="change_period('low', 12)">L</div>
+                                    <div id="medium_12" class="switch medium" onclick="change_period('medium', 12)">M
+                                    </div>
+                                    <div id="high_12" class="switch high" onclick="change_period('high', 12)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1962478952</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Aniston</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">65</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High Heart Rt.</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_13" class="switch low active" onclick="change_period('low', 13)">L</div>
+                                    <div id="medium_13" class="switch medium" onclick="change_period('medium', 13)">M
+                                    </div>
+                                    <div id="high_13" class="switch high" onclick="change_period('high', 13)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1963245785</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Welma</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">56</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">DIABETIES</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_14" class="switch low active" onclick="change_period('low', 14)">L</div>
+                                    <div id="medium_14" class="switch medium" onclick="change_period('medium', 14)">M
+                                    </div>
+                                    <div id="high_14" class="switch high" onclick="change_period('high', 14)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1132556234</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Ramya</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">44</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High Heart Rt.</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_15" class="switch low active" onclick="change_period('low', 15)">L</div>
+                                    <div id="medium_15" class="switch medium" onclick="change_period('medium', 15)">M
+                                    </div>
+                                    <div id="high_15" class="switch high" onclick="change_period('high', 15)">H</div>
+                                </div>
+                            </div>
+                    </td>
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/MAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1342569857</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Morsal</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">67</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_16" class="switch low active" onclick="change_period('low', 16)">L</div>
+                                    <div id="medium_16" class="switch medium" onclick="change_period('medium', 16)">M
+                                    </div>
+                                    <div id="high_16" class="switch high" onclick="change_period('high', 16)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1962478952</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Jamie</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">70</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High Heart Rt.</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_17" class="switch low active" onclick="change_period('low', 17)">L</div>
+                                    <div id="medium_17" class="switch medium" onclick="change_period('medium', 17)">M
+                                    </div>
+                                    <div id="high_17" class="switch high" onclick="change_period('high', 17)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/MAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1963245785</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">John</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">68</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_18" class="switch low active" onclick="change_period('low', 18)">L</div>
+                                    <div id="medium_18" class="switch medium" onclick="change_period('medium', 18)">M
+                                    </div>
+                                    <div id="high_18" class="switch high" onclick="change_period('high', 18)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/MAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1962478952</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Jamie</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">70</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High Heart Rt.</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_19" class="switch low active" onclick="change_period('low', 19)">L</div>
+                                    <div id="medium_19" class="switch medium" onclick="change_period('medium', 19)">M
+                                    </div>
+                                    <div id="high_19" class="switch high" onclick="change_period('high', 19)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/MAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1963245785</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">John</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">68</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_20" class="switch low active" onclick="change_period('low', 20)">L</div>
+                                    <div id="medium_20" class="switch medium" onclick="change_period('medium', 20)">M
+                                    </div>
+                                    <div id="high_20" class="switch high" onclick="change_period('high', 20)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1963245785</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Welma</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">56</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">DIABETIES</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_21" class="switch low active" onclick="change_period('low', 21)">L</div>
+                                    <div id="medium_21" class="switch medium" onclick="change_period('medium', 21)">M
+                                    </div>
+                                    <div id="high_21" class="switch high" onclick="change_period('high', 21)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/WOMAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1132556234</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Ramya</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">44</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High Heart Rt.</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_22" class="switch low active" onclick="change_period('low', 22)">L</div>
+                                    <div id="medium_22" class="switch medium" onclick="change_period('medium', 22)">M
+                                    </div>
+                                    <div id="high_22" class="switch high" onclick="change_period('high', 22)">H</div>
+                                </div>
+                            </div>
+                    </td>
+                </tr>
+                <tr class="low-alert">
+                    <td>
+                        <div class="round-img face-padding">
+                            <a href="#"><img class="rounded-circle" src="images/Faces/MAN40.png" alt=""></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">1342569857</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">Morsal</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">67</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">CHF</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">COPD</div>
+                    </td>
+                    <td>
+                        <div class="extraPadding">High BP</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="extraPaddingLast">
+                            <div class="parent">
+                                <div class="switch_3_ways">
+                                    <div id="low_23" class="switch low active" onclick="change_period('low', 23)">L</div>
+                                    <div id="medium_23" class="switch medium" onclick="change_period('medium', 23)">M
+                                    </div>
+                                    <div id="high_23" class="switch high" onclick="change_period('high', 23)">H</div>
+                                </div>
+                            </div>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+<!-- Edit Modal HTML -->
+<div id="addEmployeeModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form>
+                <div class="modal-header">
+                    <h4 class="modal-title">Patient Details</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Primary Conditions:</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <input type="submit" class="btn btn-success" value="Add">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<section class="footer-gradient">
+</section>
+<footer class="bootstrap-footer">
+    <div class="container">
+        <div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="white center">eVita Patient Assessment Solution</p>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <ul class="footer-small-nav">
+                        <li><a href="#">Contact Rapid Advantage Team - Phone: |</a></li>
+                        <li><a href="#">Email: |</a></li>
+                        <li><a href="#">Time: |</a></li>
+                        <li><a href="#">After Hours Support 1-800XXX-XXX</a></li>
+                        <img class="footer-logo" src="images/Logo.png">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</footer>
+
+<script>
+
+    var rating = [2, 5, 16]
+    var ratingBar = document.querySelectorAll(".js-rating-progress")
+
+    document.querySelector('#walk-score').innerHTML = rating[0]
+    document.querySelector('#transit-score').innerHTML = rating[1]
+    document.querySelector('#bike-score').innerHTML = rating[2]
+
+    document.querySelector('.walk-container .js-rating-progress').style.strokeDashoffset = 25 - rating[0]
+    document.querySelector('.transit-container .js-rating-progress').style.strokeDashoffset = 25 - rating[1]
+    document.querySelector('.bike-container .js-rating-progress').style.strokeDashoffset = 25 - rating[2]
+
+    for (i = 0; i < ratingBar.length; i++) {
+        if (rating[i] <= 2) {
+            ratingBar[i].classList.add('under-7')
+        }
+        if (6 < rating[i] && rating[i] <= 8) {
+            ratingBar[i].classList.add('under-8')
+        }
+        if (10 < rating[i]) {
+            ratingBar[i].classList.add('under-10')
+        }
+    }
+
+
+    function change_period(period, id) {
+        var low = document.getElementById("low_" + id);
+        var medium = document.getElementById("medium_" + id);
+        var high = document.getElementById("high_" + id);
+        if (period === "low") {
+            medium.className += "switch medium";
+            high.className += "switch high";
+            setTimeout(function () {
+                low.className += "switch low active";
+            }, 300);
+        } else if (period === "medium") {
+            low.className += "switch low";
+            high.className += "switch high";
+            setTimeout(function () {
+                medium.className += "switch medium active";
+            }, 300);
+        } else {
+            low.className += "switch low";
+            medium.className += "switch medium";
+            setTimeout(function () {
+                high.className += "switch high active";
+            }, 300);
+        }
+    }
+</script>
+
+
+</body>
+</html>                                		                            
