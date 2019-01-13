@@ -26,8 +26,10 @@
 
         /* Profile sidebar */
         .profile-sidebar {
-            height: 600px;
+            height: 725px;
             background: #656565;
+			position: relative;
+			top: -23px;
         }
 
         .patient-profile-img {
@@ -61,8 +63,7 @@
 
         .patient-info {
             text-align: center;
-            margin-top: 45px;
-            margin-left: 40px;
+            margin: 10% 6%;
         }
 
         .patient-info .btn {
@@ -186,6 +187,7 @@
                                 <td>
                                     <div class="col-md-6 justify white">Jennifer</div>
                                 </td>
+								
                             </tr>
                             <tr>
                                 <td>
@@ -236,9 +238,13 @@
                                     <div class="col-md-6 justify white">#hfjdjkg</div>
                                 </td>
                             </tr>
+							
                         </table>
+						<div class="view-button">
+							<button class="profile_button">View Profile</button>
+						</div>
                     </div>
-
+                     
                     <!-- END Info-Table -->
                 </div>
                 <div class="row margin-top-05">
@@ -266,197 +272,166 @@
                     <ul class="tabs-panels">
                         <li class="tabs-panel">
                             <section class="">
-                                <div class="col-md-12">
-                                    <div class="col-md-2">
-                                        <label>Date:</label>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <div class="flex">
-                                            <button><i class="fa fa-calendar"></i></button>
-                                            <input type="text" id="demo" class="form-control">
-                                            <!---<select></select>
-                                            <div id="demo" class="form-control"></div>----->
-                                            <i class="fa fa-angle-down" id="angle_down"></i>
+                                    <div class="col-md-12">
+										<div class="col-md-2">
+											<label>Date:</label>
+										</div>
+										<div class="col-md-10">
+											<div class="flex">
+											<button><i class="fa fa-calendar"></i></button>
+											<input type="text" id="demo" class="form-control">
+											<!---<select></select>
+											<div id="demo" class="form-control"></div>----->
+											<i class="fa fa-angle-down" id="angle_down"></i>
+											
+										</div>	
+									</div>
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+                            </select>
 
-                            <section class="display-readings">
-                                <div class="col-md-12 p0">
-                                    <div class="boxes">
-                                        <div class="box">
-                                            <i class="fa fa-2x fa-thermometer-quarter"></i>
-                                            <div>
-                                                <table>
-                                                    <tbody>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="center">98%</div>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>Temperature</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                        <div class="box">
-                                            <i class="fa fa-2x fa-thermometer-quarter"></i>
-                                            <div>
-                                                <table>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="center">98%</div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="center">Temperature</div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="box">
-                                            <i class="fa fa-2x fa-thermometer-quarter"></i>
-                                            <div>
-                                                <table>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="center">98%</div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="center">Temperature</div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="box">
-                                            <i class="fa fa-2x fa-thermometer-quarter"></i>
-                                            <div>
-                                                <table>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="center">98%</div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="center">Temperature</div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="box">
-                                            <i class="fa fa-2x fa-thermometer-quarter"></i>
-                                            <div>
-                                                <table>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="center">98%</div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="center">Temperature</div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="box">
-                                            <i class="fa fa-2x fa-thermometer-quarter"></i>
-                                            <div>
-                                                <table>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="center">98%</div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="center">Temperature</div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </section>
-                            <section class="display-graph-section">
-                                <div class="col-md-12 p0">
-                                    <div class="graph-and-tables">
-                                        <div class="patient_questionary">
-                                            <table class="">
-                                                <tr class="bottom">
-                                                    <td>
-                                                        <div class="extraPadding">Day over day changes in
-                                                            weight
-                                                        </div>
-                                                    </td>
-                                                    <td>+3Ibs</td>
-                                                    <div class="line"></div>
-                                                <tr>
-
-                                                <tr class="bottom">
-                                                    <td>
-                                                        <div class="extraPadding">I am having chest pain or
-                                                            pressure
-                                                        </div>
-                                                    </td>
-                                                    <td>Yes</td>
-                                                <tr>
-                                                <tr class="bottom">
-                                                    <td>
-                                                        <div class="extraPadding">I am more short of breath
-                                                        </div>
-                                                    </td>
-                                                    <td>-</td>
-                                                <tr>
-                                                <tr class="bottom">
-                                                    <td>
-                                                        <div class="extraPadding">I wake up in the night with
-                                                            shortness
-                                                        </div>
-                                                    </td>
-                                                    <td>No</td>
-                                                <tr>
-                                                <tr class="bottom">
-                                                    <td>
-                                                        <div class="extraPadding">I have swelling in my legs
-                                                        </div>
-                                                    </td>
-                                                    <td>No</td>
-                                                <tr>
-                                            </table>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+								<section  class="display-readings">
+									<div class="col-md-12 p0">
+										<div class="boxes">
+										    <div class="box">
+												<!---<i class="fa fa-2x fa-thermometer-quarter"></i>-------->
+												<img src="images/Temperature.png" width="60px" />
+												<div>
+													<table class="box-table">
+														<tbody>
+															<tr>
+																<td><div class="center">98%</div></td>
+															</tr>
+															<tr>
+																<td><div class="border-top center">Temperature</div></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="box">
+												<!---<i class="fa fa-2x fa-thermometer-quarter"></i>------>
+												<img src="images/BloodPressure.png" width="60px" />
+												<div>
+													<table class="box-table">
+														<tbody>
+                     										
+															<tr>
+																<td><div class="center">120/80</div></td>
+															</tr>
+									
+															<tr>
+																<td><div class="border-top center">BP(SYS/DIA)</div></td>
+															</tr>
+      													</tbody>
+													</table>
+												</div>
+											</div>
+											
+											<div class="box">
+												<!---<i class="fa fa-2x fa-heartbeat"></i>------>
+												<img src="images/HeartRate.png" width="60px" />
+												<div>
+													<table class="box-table"> 
+														<tbody>
+															<tr>
+																<td><div class="center">100</div></td>
+															</tr>
+															<tr>
+																<td><div class="border-top center">Heart Rate</div></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											
+											<div class="box">
+												<!--<i class="fa fa-2x fa-thermometer-quarter"></i>---->
+												<img src="images/SpO2.png" width="60px" />
+												<div>
+													<table class="box-table">
+														<tbody>
+															<tr>
+																<td><div class="center">96%</div></td>
+															</tr>
+															<tr>
+																<td><div class="border-top center">Sp02</div></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="box">
+												<!----<i class="fa fa-2x fa-thermometer-quarter"></i>---------->
+												<img src="images/ECG.png" width="60px" />
+												<div>
+													<table class="box-table">
+														<tbody>
+															<tr>
+																<td><div class="center">16</div></td>
+															</tr>
+															<tr>
+																<td><div class="border-top center">Resp Rate</div></td>
+															</tr>
+														</tbody>
+							
+													</table>
+												</div>
+											</div>
+											<div class="box">
+												<!----<i class="fa fa-2x fa-thermometer-quarter"></i>------->
+												<img src="images/Weight.png" width="60px" />
+												<div>
+													<table class="box-table">
+														<tbody>
+															<tr>
+																<td><div class="center">62</div></td>
+															</tr>
+															<tr>
+																<td><div class="border-top center">Weight</div></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</section>
+								<section class="display-graph-section">
+									<div class="col-md-12 p0">
+										<div class="graph-and-tables">
+											<div class="patient_questionary">
+												<table class="patientq">
+													<tbody class="patientq_list">
+													<tr class="bottom">
+														<td><div class="extraPadding">Day over day changes in weight</div></td>
+														<td>+3Ibs</td>
+			                                            <div class="line"></div>
+													<tr>
+													
+													<tr class="bottom">
+														<td><div class="extraPadding">I am having chest pain or pressure</div></td>
+														<td>Yes</td>
+													<tr>
+													<tr class="bottom">
+														<td><div class="extraPadding">I am more short of breath</div></td>
+														<td>-</td>
+													<tr>
+													<tr class="bottom">
+														<td><div class="extraPadding">I wake up in the night with shortness</div></td>
+														<td>No</td>
+													<tr>
+													<tr class="bottom">
+														<td><div class="extraPadding">I have swelling in my legs</div></td>
+														<td>No</td>
+													<tr>
+													</tbody>
+												</table>
+												
+											</div>
+										</div>
+									</div>
+								</section>
                         </li>
 
                         <li class="tabs-panel">
@@ -1349,7 +1324,8 @@
         </div>
     </div>
 </section>
-
+<section class="footer-gradient">
+</section>
 <footer class="bootstrap-footer">
     <div class="container">
         <div>
@@ -1439,6 +1415,7 @@
             return valString;
         }
     }
+	
 </script>
 
 </body>
