@@ -333,7 +333,10 @@ textarea {
 }
 
 .textarea-background {
-    background: #fff;
+    background: transparent;
+}
+.textarea-background:hover{
+	background: #f2f2f2;
 }
 
 /*form styles*/
