@@ -1830,6 +1830,25 @@ position: absolute;-----*/
     right: -15px;
 }
 
+/*Week view page*/
+.week-view table.table tr th, .week-view table.table tr td, .month-view table.table tr th, .month-view table.table tr td {
+    border: 1px solid #ddd;
+}
+
+.week-view .bg-high, .month-view .bg-high{
+    background-color: #e6412c;
+}
+
+.week-view .bg-low, .month-view .bg-low{
+    background-color: #c8c8c8;
+}
+
+.month-view .table-fixed tbody {
+    height: 150px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
 /*-----------------------Media--------------------------------------------------*/
 
 @media screen and (max-width: 960px) {
@@ -1913,7 +1932,6 @@ position: absolute;-----*/
 
 }
 
-}
 @media only screen and (min-width: 768px) {
 
 }
