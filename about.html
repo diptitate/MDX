@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap-multiselect.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"
           type="text/css"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet"
-          type="text/css"/>
-
+    <link type="text/css" href="css/bootstrap-timepicker.min.css" />
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -23,17 +21,9 @@
     <style>
         
 
-        .extraPadding_27 {
-            padding: 27px
-        }
+        
 
-        .label-extraPadding {
-            padding: 14px
-        }
-
-        td {
-            padding: 0;
-        }
+        
 
         /*---.btn{
 		background: #656565;
@@ -43,23 +33,9 @@
 		background: #656565;
 	}-----*/
 
-        td > div {
-            border-style: solid;
-            border-color: #ddd;
-            /*--background: #f9f9f9;----*/
-            border-width: 0px 0;
-            /* now, here you can add the margin */
-            margin-bottom: 0px;
-            margin: 0;
-            /* just some nice padding, you don't really need this */
-            padding: 10px;
-        }
+        
 
-        table.table tr th,
-        table.table tr td {
-            padding: 0;
-            /*---background: #f9f9f9;---*/
-        }
+        
 
         /*---.table-wrapper .btn-add {
 	    top: 70px;
@@ -87,16 +63,7 @@
         /* LABEL ======================================= */
 
         label {
-            color: #999;
-            font-size: 18px;
-            font-weight: normal;
-            /*---position:absolute;---*/
-            pointer-events: none;
-            left: 5px;
-            top: 10px;
-            transition: 0.2s ease all;
-            -moz-transition: 0.2s ease all;
-            -webkit-transition: 0.2s ease all;
+           
         }
 
         /* active state */
@@ -198,93 +165,6 @@
                 width: 0;
                 background: transparent;
             }
-        }
-
-        /*-----------multiselect-------------------*/
-
-        .dropdown {
-            /*---- position: absolute;
-        top:50%;
-        transform: translateY(-50%);-----*/
-        }
-
-        .down {
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
-
-        .dropdown dd,
-        .dropdown dt {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .dropdown ul {
-            margin: -1px 0 0 0;
-        }
-
-        .dropdown dd {
-            position: relative;
-        }
-
-        .dropdown a,
-        .dropdown a:visited {
-            color: #fff;
-            text-decoration: none;
-            outline: none;
-            font-size: 12px;
-        }
-
-        .dropdown dt a {
-            background-color: #4F6877;
-            display: block;
-            padding: 8px 20px 5px 10px;
-            min-height: 25px;
-            line-height: 24px;
-            overflow: hidden;
-            border: 0;
-            width: 272px;
-        }
-
-        .dropdown dt a span,
-        .multiSel span {
-            cursor: pointer;
-            display: inline-block;
-            padding: 0 3px 2px 0;
-        }
-
-        .dropdown dd ul {
-            background-color: #4F6877;
-            border: 0;
-            color: #fff;
-            display: none;
-            left: 0px;
-            padding: 2px 15px 2px 5px;
-            position: absolute;
-            top: -5px;
-            left: 9px;
-            width: 272px;
-            list-style: none;
-            height: 100px;
-            overflow: auto;
-        }
-
-        .dropdown span.value {
-            display: none;
-        }
-
-        .dropdown dd ul li a {
-            padding: 5px;
-            display: block;
-        }
-
-        .dropdown dd ul li span.dropdown-text {
-            position: relative;
-            top: -17px;
-        }
-
-        .dropdown dd ul li a:hover {
-            background-color: #000;
         }
     </style>
 </head>
@@ -408,7 +288,7 @@
                 </li>
                 <li class="tabs-panel">
                     <div class="container">
-                        <div class="table-wrapper">
+                        <div class="table-wrapper threshold_table">
                             <div class="table-title">
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -470,7 +350,7 @@
                                 <tr>
 
                                     <td>
-                                        <div class="label-extraPadding">
+                                        <div class="label-extraPadding label-threshold">
                                             <label>Temperature</label>
                                         </div>
                                     </td>
@@ -505,7 +385,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="label-extraPadding">
+                                        <div class="label-extraPadding label-threshold">
                                             <label>SYS</label>
                                         </div>
                                     </td>
@@ -540,7 +420,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="label-extraPadding">
+                                        <div class="label-extraPadding label-threshold">
                                             <label>DIA</label>
                                         </div>
                                     </td>
@@ -576,7 +456,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="label-extraPadding">
+                                        <div class="label-extraPadding label-threshold">
                                             <label>Heart Rate</label>
                                         </div>
                                     </td>
@@ -612,7 +492,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="label-extraPadding">
+                                        <div class="label-extraPadding label-threshold">
                                             <label>Respiratory Rate</label>
                                         </div>
                                     </td>
@@ -648,7 +528,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="label-extraPadding">
+                                        <div class="label-extraPadding label-threshold">
                                             <label>SpO2</label>
                                         </div>
                                     </td>
@@ -678,7 +558,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="label-extraPadding">
+                                        <div class="label-extraPadding label-threshold">
                                             <label>FEV1</label>
                                         </div>
                                     </td>
@@ -708,7 +588,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="label-extraPadding">
+                                        <div class="label-extraPadding label-threshold">
                                             <label>FEC</label>
                                         </div>
                                     </td>
@@ -737,7 +617,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="label-extraPadding">
+                                        <div class="label-extraPadding label-threshold">
                                             <label>FEV1/FEV</label>
                                         </div>
                                     </td>
@@ -767,7 +647,7 @@
 
                                 <tr>
                                     <td>
-                                        <div class="label-extraPadding">
+                                        <div class="label-extraPadding label-threshold">
                                             <label>PEF</label>
                                         </div>
                                     </td>
@@ -797,7 +677,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="label-extraPadding">
+                                        <div class="label-extraPadding label-threshold">
                                             <label>Concerning Symptoms</label>
                                         </div>
                                     </td>
@@ -928,28 +808,10 @@
                                     </td>
                                     <td>
                                         <div class="center" style="padding: 38px;">
-                                            <div class="wrapper">
-                                                <div class="bx--form-item">
-                                                    <div class="bx--time-picker">
-                                                        <div class="bx--time-picker__input">
-                                                            <input id="time-picker-1" type="text"
-                                                                   class="bx--time-picker__input-field"
-                                                                   pattern="(1[012]|[1-9]):[0-5][0-9](\\s)?(?i)"
-                                                                   placeholder="hh:mm" maxlength="5"/>
-                                                        </div>
-                                                        <div class="bx--time-picker__select bx--select bx--select--inline">
-
-                                                            <select id="select-id-1" class="bx--select-input">
-                                                                <option class="bx--select-option" value="AM">AM</option>
-                                                                <option class="bx--select-option" value="PM">PM</option>
-                                                            </select>
-
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <div class="input-group bootstrap-timepicker timepicker">
+												<input id="timepicker1" type="text" class="form-control input-small">
+												<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+											</div>
                                         </div>
                                     </td>
                                     <td>
@@ -2251,7 +2113,8 @@
 
 <script src="js/bootstrap-multiselect.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+
 <script>
     $(function () {
         // Active the first thumb & panel
@@ -2301,6 +2164,9 @@
         });
     }
 </script>
+<script type="text/javascript">
+            $('#timepicker1').timepicker();
+        </script>
 
 </body>
 

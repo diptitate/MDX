@@ -22,111 +22,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/daterangepicker.js"></script>
-    <style>
 
-        /* Profile sidebar */
-        .profile-sidebar {
-            height: 725px;
-            background: #656565;
-			position: relative;
-			top: -23px;
-        }
-
-        .patient-profile-img {
-            text-align: center;
-
-        }
-
-        .justify {
-            text-align: justify;
-        }
-
-        .profile-usertitle {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .profile-usertitle-name {
-            color: #5a7391;
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 7px;
-        }
-
-        .profile-usertitle-job {
-            text-transform: uppercase;
-            color: #5b9bd1;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .patient-info {
-            text-align: center;
-            margin: 10% 6%;
-        }
-
-        .patient-info .btn {
-            text-transform: uppercase;
-            font-size: 11px;
-            font-weight: 600;
-            padding: 6px 15px;
-            margin-right: 5px;
-        }
-
-        .patient-info .btn:last-child {
-            margin-right: 0px;
-        }
-
-        .profile-usermenu {
-            margin-top: 30px;
-        }
-
-        .profile-usermenu ul li {
-            border-bottom: 1px solid #f0f4f7;
-        }
-
-        .profile-usermenu ul li:last-child {
-            border-bottom: none;
-        }
-
-        .profile-usermenu ul li a {
-            color: #93a3b5;
-            font-size: 14px;
-            font-weight: 400;
-        }
-
-        .profile-usermenu ul li a i {
-            margin-right: 8px;
-            font-size: 14px;
-        }
-
-        .profile-usermenu ul li a:hover {
-            background-color: #fafcfd;
-            color: #5b9bd1;
-        }
-
-        .profile-usermenu ul li.active {
-            border-bottom: none;
-        }
-
-        .profile-usermenu ul li.active a {
-            color: #5b9bd1;
-            background-color: #f6f9fb;
-            border-left: 2px solid #5b9bd1;
-            margin-left: -2px;
-        }
-
-        /* Profile Content */
-        .profile-content {
-            /*---- min-height: 460px;------*/
-        }
-
-        .profile-sidebar h2 {
-            text-align: center;
-            color: #fff
-        }
-    </style>
 </head>
 <body style="background: #f1f1f1">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark bootstrap-navabr-dark">
@@ -437,228 +333,243 @@
                         <li class="tabs-panel">
                             <div class="row">
                                 <div class="col-md-12 week-view">
-                                    <table class="table table-style bordered">
-                                        <thead>
-                                        <tr>
-                                            <th rowspan="2">Day</th>
-                                            <th class="border-bottom-0">
-                                                <div class="extraPadding">Temperature</div>
-                                            </th>
-                                            <th class="center" style="">
-                                                <div class="extraPadding">Blood pressure</div>
-                                            </th>
-                                            <th class="center" style="">
-                                                <div class="extraPadding">Heart rate</div>
-                                            </th>
-                                            <th class="center" style="">
-                                                <div class="extraPadding">Spo2</div>
-                                            </th>
-                                            <th style="">
-                                                <div class="extraPadding">Resp. Rate</div>
-                                            </th>
-                                            <th style="">
-                                                <div class="extraPadding">Weight</div>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th style="">
-                                                <div class="extraPadding">(in Fahrenheit)</div>
-                                            </th>
-                                            <th class="center" style="">
-                                                <div class="extraPadding">(in Sys/Dia)</div>
-                                            </th>
-                                            <th class="center" style="">
-                                                <div class="extraPadding">(in bpm)</div>
-                                            </th>
-                                            <th class="center" style="">
-                                                <div class="extraPadding">(in %)</div>
-                                            </th>
-                                            <th style="">
-                                                <div class="extraPadding">(in minute)</div>
-                                            </th>
-                                            <th style="">
-                                                <div class="extraPadding">(in lb)</div>
-                                            </th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>1 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">104</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">120/180</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">96</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">16</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">62</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>2 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>3 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">98</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">112/180</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">85</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">11</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">50</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>4 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">104</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">120/180</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">96</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">16</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">62</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>5 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>6 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">98</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">112/180</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">85</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">11</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">50</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>7 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+									<div class="table-wrapper">
+										<div class="table-title">
+											<div class="row">
+												<div class="col-sm-6">
+													<!---<h2>Manage <b>Employees</b></h2>------>
+
+												</div>
+												<div class="col-sm-6">
+													<!---<a href="#addEmployeeModal" class="" data-toggle="modal"><img class="rounded-circle btn-add" src="images/plus.png" alt=""></a>
+						<h2 class="add-ct-btn"><button type="button" class="btn btn-circle btn-lg btn-success waves-effect waves-dark">+</button></h2>-->
+
+												</div>
+											</div>
+										</div>
+										<table class="table table-style bordered">
+											<thead>
+											<tr>
+												<th rowspan="2">Day</th>
+												<th class="border-bottom-0">
+													<div class="extraPadding">Temperature</div>
+												</th>
+												<th class="center" style="">
+													<div class="extraPadding">Blood pressure</div>
+												</th>
+												<th class="center" style="">
+													<div class="extraPadding">Heart rate</div>
+												</th>
+												<th class="center" style="">
+													<div class="extraPadding">Spo2</div>
+												</th>
+												<th style="">
+													<div class="extraPadding">Resp. Rate</div>
+												</th>
+												<th style="">
+													<div class="extraPadding">Weight</div>
+												</th>
+											</tr>
+											<tr>
+												<th style="">
+													<div class="extraPadding">(in Fahrenheit)</div>
+												</th>
+												<th class="center" style="">
+													<div class="extraPadding">(in Sys/Dia)</div>
+												</th>
+												<th class="center" style="">
+													<div class="extraPadding">(in bpm)</div>
+												</th>
+												<th class="center" style="">
+													<div class="extraPadding">(in %)</div>
+												</th>
+												<th style="">
+													<div class="extraPadding">(in minute)</div>
+												</th>
+												<th style="">
+													<div class="extraPadding">(in lb)</div>
+												</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>
+													<div class="label-extraPadding label-threshold">
+														<label>1 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="center">100</div>
+												</td>
+												<td class="bg-low">
+													<div class="center">120/180</div>
+												</td>
+												<td>
+													<div class="center">100</div>
+												</td>
+												<td>
+													<div class="center">96</div>
+												</td>
+												<td class="bg-high">
+													<div class="center">16</div>
+												</td>
+												<td>
+													<div class="center">62</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>2 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>3 Jan</label>
+													</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">98</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">112/180</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">85</div>
+												</td>
+												<td>
+													<div class="extraPadding center">11</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">50</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>4 Jan</label>
+													</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">104</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">120/180</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">96</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">16</div>
+												</td>
+												<td>
+													<div class="extraPadding center">62</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>5 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>6 Jan</label>
+													</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">98</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">112/180</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">85</div>
+												</td>
+												<td>
+													<div class="extraPadding center">11</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">50</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>7 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											</tbody>
+										</table>
+									</div>	
                                 </div>
 
                             </div>
@@ -668,653 +579,668 @@
                         <li class="tabs-panel">
                             <div class="row">
                                 <div class="col-md-12 month-view" id="month_view">
-                                    <table class="table table-style bordered table-fixed">
-                                        <thead>
-                                        <tr>
-                                            <th rowspan="2">Day</th>
-                                            <th class="border-bottom-0">
-                                                <div class="extraPadding">Temperature</div>
-                                            </th>
-                                            <th class="center" style="">
-                                                <div class="extraPadding">Blood pressure</div>
-                                            </th>
-                                            <th class="center" style="">
-                                                <div class="extraPadding">Heart rate</div>
-                                            </th>
-                                            <th class="center" style="">
-                                                <div class="extraPadding">Spo2</div>
-                                            </th>
-                                            <th style="">
-                                                <div class="extraPadding">Resp. Rate</div>
-                                            </th>
-                                            <th style="">
-                                                <div class="extraPadding">Weight</div>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th style="">
-                                                <div class="extraPadding">(in Fahrenheit)</div>
-                                            </th>
-                                            <th class="center" style="">
-                                                <div class="extraPadding">(in Sys/Dia)</div>
-                                            </th>
-                                            <th class="center" style="">
-                                                <div class="extraPadding">(in bpm)</div>
-                                            </th>
-                                            <th class="center" style="">
-                                                <div class="extraPadding">(in %)</div>
-                                            </th>
-                                            <th style="">
-                                                <div class="extraPadding">(in minute)</div>
-                                            </th>
-                                            <th style="">
-                                                <div class="extraPadding">(in lb)</div>
-                                            </th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>8 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">104</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">120/180</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">96</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">16</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">62</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>9 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>10 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">98</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">112/180</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">85</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">11</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">50</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>11 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">104</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">120/180</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">96</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">16</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">62</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>12 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>13 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">98</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">112/180</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">85</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">11</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">50</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>14 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>15 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">104</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">120/180</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">96</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">16</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">62</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>16 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>17 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">98</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">112/180</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">85</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">11</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">50</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>18 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">104</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">120/180</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">96</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">16</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">62</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>19 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>20 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">98</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">112/180</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">85</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">11</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">50</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>21 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>22 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">104</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">120/180</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">96</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">16</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">62</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>23 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>24 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">98</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">112/180</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">85</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">11</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">50</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>25 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">104</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">120/180</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">96</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">16</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">62</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>26 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>27 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">98</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">112/180</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">85</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">11</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">50</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>28 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>29 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">104</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">120/180</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">96</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">16</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">62</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>30 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">100</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">115/180</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">95</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">13</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">55</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="label-extraPadding">
-                                                    <label>31 Jan</label>
-                                                </div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">98</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">112/180</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">90</div>
-                                            </td>
-                                            <td class="bg-low">
-                                                <div class="extraPadding center">85</div>
-                                            </td>
-                                            <td>
-                                                <div class="extraPadding center">11</div>
-                                            </td>
-                                            <td class="bg-high">
-                                                <div class="extraPadding center">50</div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+									<div class="table-wrapper">
+										<div class="table-title">
+											<div class="row">
+												<div class="col-sm-6">
+													<!---<h2>Manage <b>Employees</b></h2>------>
+
+												</div>
+												<div class="col-sm-6">
+													<!---<a href="#addEmployeeModal" class="" data-toggle="modal"><img class="rounded-circle btn-add" src="images/plus.png" alt=""></a>
+						<h2 class="add-ct-btn"><button type="button" class="btn btn-circle btn-lg btn-success waves-effect waves-dark">+</button></h2>-->
+
+												</div>
+											</div>
+										</div>
+										<table class="table table-style bordered table-fixed">
+											<thead>
+											<tr>
+												<th rowspan="2">Day</th>
+												<th class="border-bottom-0">
+													<div class="extraPadding">Temperature</div>
+												</th>
+												<th class="center" style="">
+													<div class="extraPadding">Blood pressure</div>
+												</th>
+												<th class="center" style="">
+													<div class="extraPadding">Heart rate</div>
+												</th>
+												<th class="center" style="">
+													<div class="extraPadding">Spo2</div>
+												</th>
+												<th style="">
+													<div class="extraPadding">Resp. Rate</div>
+												</th>
+												<th style="">
+													<div class="extraPadding">Weight</div>
+												</th>
+											</tr>
+											<tr>
+												<th style="">
+													<div class="extraPadding">(in Fahrenheit)</div>
+												</th>
+												<th class="center" style="">
+													<div class="extraPadding">(in Sys/Dia)</div>
+												</th>
+												<th class="center" style="">
+													<div class="extraPadding">(in bpm)</div>
+												</th>
+												<th class="center" style="">
+													<div class="extraPadding">(in %)</div>
+												</th>
+												<th style="">
+													<div class="extraPadding">(in minute)</div>
+												</th>
+												<th style="">
+													<div class="extraPadding">(in lb)</div>
+												</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>8 Jan</label>
+													</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">104</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">120/180</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">96</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">16</div>
+												</td>
+												<td>
+													<div class="extraPadding center">62</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>9 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>10 Jan</label>
+													</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">98</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">112/180</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">85</div>
+												</td>
+												<td>
+													<div class="extraPadding center">11</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">50</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>11 Jan</label>
+													</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">104</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">120/180</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">96</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">16</div>
+												</td>
+												<td>
+													<div class="extraPadding center">62</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>12 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>13 Jan</label>
+													</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">98</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">112/180</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">85</div>
+												</td>
+												<td>
+													<div class="extraPadding center">11</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">50</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>14 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>15 Jan</label>
+													</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">104</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">120/180</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">96</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">16</div>
+												</td>
+												<td>
+													<div class="extraPadding center">62</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>16 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>17 Jan</label>
+													</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">98</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">112/180</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">85</div>
+												</td>
+												<td>
+													<div class="extraPadding center">11</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">50</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>18 Jan</label>
+													</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">104</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">120/180</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">96</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">16</div>
+												</td>
+												<td>
+													<div class="extraPadding center">62</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>19 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>20 Jan</label>
+													</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">98</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">112/180</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">85</div>
+												</td>
+												<td>
+													<div class="extraPadding center">11</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">50</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>21 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>22 Jan</label>
+													</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">104</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">120/180</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">96</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">16</div>
+												</td>
+												<td>
+													<div class="extraPadding center">62</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>23 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>24 Jan</label>
+													</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">98</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">112/180</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">85</div>
+												</td>
+												<td>
+													<div class="extraPadding center">11</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">50</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>25 Jan</label>
+													</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">104</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">120/180</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">96</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">16</div>
+												</td>
+												<td>
+													<div class="extraPadding center">62</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>26 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>27 Jan</label>
+													</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">98</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">112/180</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">85</div>
+												</td>
+												<td>
+													<div class="extraPadding center">11</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">50</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>28 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>29 Jan</label>
+													</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">104</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">120/180</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">96</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">16</div>
+												</td>
+												<td>
+													<div class="extraPadding center">62</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>30 Jan</label>
+													</div>
+												</td>
+												<td>
+													<div class="extraPadding center">100</div>
+												</td>
+												<td>
+													<div class="extraPadding center">115/180</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">95</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td>
+													<div class="extraPadding center">13</div>
+												</td>
+												<td>
+													<div class="extraPadding center">55</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="label-extraPadding">
+														<label>31 Jan</label>
+													</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">98</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">112/180</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">90</div>
+												</td>
+												<td class="bg-low">
+													<div class="extraPadding center">85</div>
+												</td>
+												<td>
+													<div class="extraPadding center">11</div>
+												</td>
+												<td class="bg-high">
+													<div class="extraPadding center">50</div>
+												</td>
+											</tr>
+											</tbody>
+										</table>
+									</div>	
                                 </div>
                             </div>
                         </li>
