@@ -1246,7 +1246,20 @@ table.table .avatar {
     background: #fff;
     padding: 0;
 	display: grid;
+    /*---box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);---*/
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border: rgba(223, 225, 229, 0);
+    /*--border-radius: 10px;----*/
 }
+.box-table{
+	width: 132px;
+}
+.border-top{
+	border-top: 1px solid gainsboro;
+}
+.extraPadding {
+            padding: 16px
+        }
 .patient_questionary{
 	color: #fff;
     position: relative;
@@ -1254,10 +1267,13 @@ table.table .avatar {
     width: 100%;
     /* margin: 0 10px 0 0; */
     opacity: .8;
-    border: 1px solid #ccc;
+    /*--border: 1px solid #ccc;---*/
     background: #4d4d4d;
     padding: 15px;
     display: grid;
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border: rgba(223, 225, 229, 0);
+    border-radius: 3px;
 }
 .graph-and-tables{
 	width: 400px;
@@ -1268,14 +1284,18 @@ table.table .avatar {
 }
 .bottom{
 	border-bottom: 1px solid #fff;
-	line-height: 2.6;
-	
 }
 #angle_down{
 	position: absolute;
     left: 28%;
     top: 24%;
 	
+}
+.view-button{
+	margin: 22px 0px;
+}
+.display-graph-section .patient_questionary .patientq .patientq_list{
+	overflow-y: scroll;
 }
 
 /*------footer gradient-------------*/
@@ -1743,6 +1763,12 @@ table.table .avatar {
 
 #addDay-TimeModal .bx--time-picker__input-field {
     width: 250px;
+}
+.view-button .profile_button{
+	padding: 5px 10px;
+    border-radius: 2px;
+    background-color: white;
+    border: none;
 }
 
 /*-------------------------------------*/
