@@ -13,33 +13,13 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"
           type="text/css"/>
     <link type="text/css" href="css/bootstrap-timepicker.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/chung-timepicker.css" />
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
-        
-
-        
-
-        
-
-        /*---.btn{
-		background: #656565;
-		padding: 5px 10px;
-	}
-    .btn :hover{
-		background: #656565;
-	}-----*/
-
-        
-
-        
-
-        /*---.table-wrapper .btn-add {
-	    top: 70px;
-	    }-----*/
 
         .group {
             position: relative;
@@ -58,12 +38,6 @@
 
         input:focus {
             outline: none;
-        }
-
-        /* LABEL ======================================= */
-
-        label {
-           
         }
 
         /* active state */
@@ -787,10 +761,10 @@
                                 <tr>
 
                                     <td>
-                                        <div class="" style="padding: 88px;">1
+                                        <div class="extraPadding">1
                                     </td>
                                     <td>
-                                        <div class="center" style="padding: 88px;">
+                                        <div class="extraPadding center">
                                             <div class="bx--select--inline">
 
                                                 <select id="select-id-2" class="bx--select-input">
@@ -807,15 +781,16 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="center" style="padding: 38px;">
-                                            <div class="input-group bootstrap-timepicker timepicker">
-												<input id="timepicker1" type="text" class="form-control input-small">
+                                        <div class="extraPadding center">
+                                            <div class="input-group chungTimePicker">
+												<input type="text" id="demo1" value="08:10" class="form-control input-small" />
 												<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
 											</div>
+											
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="center" style="padding: 38px;">
+                                        <div class="extraPadding center">
                                             <a href="#addDay-TimeModal" class="edit" data-toggle="modal"><i
                                                     class="material-icons" data-toggle="tooltip"
                                                     title="Edit">&#xE254;</i></a>
@@ -825,10 +800,10 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="" style="padding: 88px;">2
+                                        <div class="extraPadding">2
                                     </td>
                                     <td>
-                                        <div class="center" style="padding: 88px;">
+                                        <div class="extraPadding center">
                                             <div class="bx--select--inline">
 
                                                 <select id="select-id-2" class="bx--select-input">
@@ -841,41 +816,33 @@
                                                 </select>
 
                                             </div>
+
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="center" style="padding: 38px;">
-                                            <div class="wrapper">
-                                                <div class="bx--form-item">
-                                                    <div class="bx--time-picker">
-                                                        <div class="bx--time-picker__input">
-                                                            <input id="time-picker-1" type="text"
-                                                                   class="bx--time-picker__input-field"
-                                                                   pattern="(1[012]|[1-9]):[0-5][0-9](\\s)?(?i)"
-                                                                   placeholder="hh:mm" maxlength="5"/>
-                                                        </div>
-                                                        <div class="bx--time-picker__select bx--select bx--select--inline">
-
-                                                            <select id="select-id-1" class="bx--select-input">
-                                                                <option class="bx--select-option" value="AM">AM</option>
-                                                                <option class="bx--select-option" value="PM">PM</option>
-                                                            </select>
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="extraPadding center">
+                                            <div class="input-group chungTimePicker">
+												<input type="text" id="demo2" value="08:10" class="form-control input-small" />
+												<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+											</div>
+											
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="extraPadding center">
+                                            <a href="#addDay-TimeModal" class="edit" data-toggle="modal"><i
+                                                    class="material-icons" data-toggle="tooltip"
+                                                    title="Edit">&#xE254;</i></a>
                                         </div>
                                     </td>
 
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="" style="padding: 88px;">3
+                                        <div class="extraPadding">3
                                     </td>
                                     <td>
-                                        <div class="center" style="padding: 88px;">
+                                        <div class="extraPadding center">
                                             <div class="bx--select--inline">
 
                                                 <select id="select-id-2" class="bx--select-input">
@@ -888,42 +855,33 @@
                                                 </select>
 
                                             </div>
+
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="center" style="padding: 38px;">
-                                            <div class="wrapper">
-                                                <div class="bx--form-item">
-                                                    <div class="bx--time-picker">
-                                                        <div class="bx--time-picker__input">
-                                                            <input id="time-picker-1" type="text"
-                                                                   class="bx--time-picker__input-field"
-                                                                   pattern="(1[012]|[1-9]):[0-5][0-9](\\s)?(?i)"
-                                                                   placeholder="hh:mm" maxlength="5"/>
-                                                        </div>
-                                                        <div class="bx--time-picker__select bx--select bx--select--inline">
-
-                                                            <select id="select-id-1" class="bx--select-input">
-                                                                <option class="bx--select-option" value="AM">AM</option>
-                                                                <option class="bx--select-option" value="PM">PM</option>
-                                                            </select>
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
+                                        <div class="extraPadding center">
+                                            <div class="input-group chungTimePicker">
+												<input type="text" id="demo3" value="08:10" class="form-control input-small" />
+												<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+											</div>
+											
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="extraPadding center">
+                                            <a href="#addDay-TimeModal" class="edit" data-toggle="modal"><i
+                                                    class="material-icons" data-toggle="tooltip"
+                                                    title="Edit">&#xE254;</i></a>
                                         </div>
                                     </td>
 
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="" style="padding: 88px;">4
+                                        <div class="extraPadding">4
                                     </td>
                                     <td>
-                                        <div class="center" style="padding: 88px;">
+                                        <div class="extraPadding center">
                                             <div class="bx--select--inline">
 
                                                 <select id="select-id-2" class="bx--select-input">
@@ -936,41 +894,33 @@
                                                 </select>
 
                                             </div>
+
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="center" style="padding: 38px;">
-                                            <div class="wrapper">
-                                                <div class="bx--form-item">
-                                                    <div class="bx--time-picker">
-                                                        <div class="bx--time-picker__input">
-                                                            <input id="time-picker-1" type="text"
-                                                                   class="bx--time-picker__input-field"
-                                                                   pattern="(1[012]|[1-9]):[0-5][0-9](\\s)?(?i)"
-                                                                   placeholder="hh:mm" maxlength="5"/>
-                                                        </div>
-                                                        <div class="bx--time-picker__select bx--select bx--select--inline">
-
-                                                            <select id="select-id-1" class="bx--select-input">
-                                                                <option class="bx--select-option" value="AM">AM</option>
-                                                                <option class="bx--select-option" value="PM">PM</option>
-                                                            </select>
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="extraPadding center">
+                                            <div class="input-group chungTimePicker">
+												<input type="text" id="demo4" value="08:10" class="form-control input-small" />
+												<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+											</div>
+											
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="extraPadding center">
+                                            <a href="#addDay-TimeModal" class="edit" data-toggle="modal"><i
+                                                    class="material-icons" data-toggle="tooltip"
+                                                    title="Edit">&#xE254;</i></a>
                                         </div>
                                     </td>
 
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="" style="padding: 88px;">5
+                                        <div class="extraPadding">5
                                     </td>
                                     <td>
-                                        <div class="center" style="padding: 88px;">
+                                        <div class="extraPadding center">
                                             <div class="bx--select--inline">
 
                                                 <select id="select-id-2" class="bx--select-input">
@@ -983,31 +933,23 @@
                                                 </select>
 
                                             </div>
+
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="center" style="padding: 38px;">
-                                            <div class="wrapper">
-                                                <div class="bx--form-item">
-                                                    <div class="bx--time-picker">
-                                                        <div class="bx--time-picker__input">
-                                                            <input id="time-picker-1" type="text"
-                                                                   class="bx--time-picker__input-field"
-                                                                   pattern="(1[012]|[1-9]):[0-5][0-9](\\s)?(?i)"
-                                                                   placeholder="hh:mm" maxlength="5"/>
-                                                        </div>
-                                                        <div class="bx--time-picker__select bx--select bx--select--inline">
-
-                                                            <select id="select-id-1" class="bx--select-input">
-                                                                <option class="bx--select-option" value="AM">AM</option>
-                                                                <option class="bx--select-option" value="PM">PM</option>
-                                                            </select>
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="extraPadding center">
+                                            <div class="input-group chungTimePicker">
+												<input type="text" id="demo5" value="08:10" class="form-control input-small" />
+												<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+											</div>
+											
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="extraPadding center">
+                                            <a href="#addDay-TimeModal" class="edit" data-toggle="modal"><i
+                                                    class="material-icons" data-toggle="tooltip"
+                                                    title="Edit">&#xE254;</i></a>
                                         </div>
                                     </td>
 
@@ -1858,24 +1800,10 @@
                         <label>Time/Frequency:</label>
 
 
-                        <div class="bx--form-item">
-                            <div class="bx--time-picker">
-                                <div class="bx--time-picker__input">
-                                    <input id="time-picker-1" type="text" class="bx--time-picker__input-field"
-                                           pattern="(1[012]|[1-9]):[0-5][0-9](\\s)?(?i)"
-                                           placeholder="hh:mm" maxlength="5"/>
-                                </div>
-                                <div class="bx--time-picker__select bx--select bx--select--inline">
-
-                                    <select id="select-id-1" class="bx--select-input">
-                                        <option class="bx--select-option" value="AM">AM</option>
-                                        <option class="bx--select-option" value="PM">PM</option>
-                                    </select>
-
-                                </div>
-
-                            </div>
-                        </div>
+                        <div class="input-group chungTimePicker">
+												<input type="text" id="demo4" value="08:10" class="form-control input-small" />
+												<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+						</div>
 
                     </div>
 
@@ -2114,6 +2042,7 @@
 <script src="js/bootstrap-multiselect.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+<script src="js/chung-timepicker.js" type="text/javascript" charset="utf-8"></script>
 
 <script>
     $(function () {
@@ -2166,7 +2095,109 @@
 </script>
 <script type="text/javascript">
             $('#timepicker1').timepicker();
-        </script>
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  $('#demo1').chungTimePicker({
+						viewType: 1,
+						cancelCallback: function(e) {
+							alert('Cancel Callback');
+						}
+					});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  $('#demo2').chungTimePicker({
+						viewType: 1,
+						cancelCallback: function(e) {
+							alert('Cancel Callback');
+						}
+					});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  $('#demo3').chungTimePicker({
+						viewType: 1,
+						cancelCallback: function(e) {
+							alert('Cancel Callback');
+						}
+					});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  $('#demo4').chungTimePicker({
+						viewType: 1,
+						cancelCallback: function(e) {
+							alert('Cancel Callback');
+						}
+					});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  $('#demo5').chungTimePicker({
+						viewType: 1,
+						cancelCallback: function(e) {
+							alert('Cancel Callback');
+						}
+					});
+</script>
+
+
 
 </body>
 

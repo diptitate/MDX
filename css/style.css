@@ -1234,6 +1234,9 @@ label{
      transition: 0.2s ease all;
      -moz-transition: 0.2s ease all;
      -webkit-transition: 0.2s ease all;
+}
+#login_hours, #login_minutes, #login_seconds {
+	color: #fff;
 }	
 .threshold_table label, .week-view label{
 	 color: #999;
@@ -1441,7 +1444,7 @@ table.table tr th,
 }
 #angle_down{
 	position: absolute;
-    left: 28%;
+    left: 218px;
     top: 24%;
 	
 }
@@ -1450,6 +1453,9 @@ table.table tr th,
 }
 .display-graph-section .patient_questionary .patientq .patientq_list{
 	overflow-y: scroll;
+}
+..chung-timepicker td.active{
+	background-color: #1e88e5;
 }
 
 /*------footer gradient-------------*/
