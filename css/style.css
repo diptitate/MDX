@@ -1941,34 +1941,26 @@ table.table tr th,
     border: none;
 }
 .chungTimePicker{
-	/*--width: 120px;----*/
+	width: 120px;
 }
 .prescription_textbox{
 	border: 1px solid #f1f1f1;
     border-radius: 10px;
 }
-.calendar-input-wrapper, .time-wrapper{
+.calendar-input-wrapper{
 	position: relative;
 }
 #demo{
 	    width: 354px;
 		cursor: pointer;
 }
-#demo1{
-	width: 120px;
-	cursor: pointer;
-}
+
 .cal-icon{
 	position: absolute;
 	left: 95%;
   top: calc(50% - 0.5em); 
 }
 
-.time-icon{
-	position: absolute;
-	left: 95%;
-  top: calc(50% - 0.5em); 
-}
 
 /*-------------------------------------*/
 /*-----footer-----------*/
