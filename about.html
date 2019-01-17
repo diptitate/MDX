@@ -12,12 +12,16 @@
     <link rel="stylesheet" href="css/bootstrap-multiselect.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"
           type="text/css"/>
-    <link type="text/css" href="css/bootstrap-timepicker.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/chung-timepicker.css" />
+    <link href="css/daterangepicker.css" rel="stylesheet" type="text/css"/>
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
 
     <style>
 
@@ -286,14 +290,14 @@
                                     <!---<th colspan="2" class="center" style="">
                                         <div class="extraPadding">Low Alerts</div>
                                     </th>---->
-                                    <th colspan="2" class="center" style="">
-                                        <div class="extraPadding">Medium Alerts</div>
+                                    <th colspan="2">
+                                        <div class="extraPadding center">Medium Alerts</div>
                                     </th>
-                                    <th colspan="2" class="center" style="">
-                                        <div class="extraPadding">High Alerts</div>
+                                    <th colspan="2">
+                                        <div class="extraPadding center">High Alerts</div>
                                     </th>
                                     <th rowspan="2" style="">
-                                        <div class="extraPadding">#</div>
+                                        <div class="extraPadding center">#</div>
                                     </th>
 
                                 </tr>
@@ -720,7 +724,7 @@
                 </li>
                 <li class="tabs-panel">
                     <div class="container">
-                        <div class="table-wrapper">
+                        <div class="table-wrapper scheduled-measurement-table">
                             <div class="table-title">
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -788,6 +792,7 @@
 											
                                         </div>
                                     </td>
+									
                                     <!----<td>
                                         <div class="extraPadding">
                                             <a href="#addDay-TimeModal" class="edit" data-toggle="modal"><i
