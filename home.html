@@ -55,9 +55,9 @@
             padding: 10px;
         }
 
-        .extraPadding {
+        /*---.extraPadding {
             padding: 16px
-        }
+        }-------*/
 
         .extraPaddingLast {
             padding: 8px
@@ -69,12 +69,12 @@
 
         .high-alert td:first-child div {
             border-radius: 2px;
-            border-left: 6px solid #EB4000;
+            border-left: 6px solid #2962FF;
         }
 
         .medium-alert td:first-child div {
             border-radius: 2px;
-            border-left: 6px solid #0093C7;
+            border-left: 6px solid #4FC3F7;
         }
 
         .low-alert td:first-child div {
@@ -143,11 +143,11 @@
         }
 
         .switch.medium.active {
-            background-color: #4a95cc;
+            background-color: #4FC3F7;
         }
 
         .switch.high.active {
-            background-color: #e6412c;
+            background-color: #2962FF;
         }
 
         .face-padding {
@@ -167,10 +167,10 @@
         </button>
         <div class="collapse navbar-collapse" id="bootstrap-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="active nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="active nav-item"><a href="home.html" class="nav-link">Home</a></li>
 
-                <li class="nav-item"><a href="setting.html" class="nav-link">Settings</a></li>
-                <li class="nav-item"><a href="logout.html" class="nav-link">Log Out</a></li>
+                <li class="nav-item"><a href="doctor_profile.html" class="nav-link">Settings</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Log Out</a></li>
             </ul>
         </div>
     </div>
@@ -213,7 +213,7 @@
                     <circle cx="16" cy="16" r="15.9155" class="rating-progress js-rating-progress"/>
                 </svg>
                 <!---<div class="walk-icon"><i class="fa fa-user" aria-hidden="true"></i></div>---->
-                <div class="walk-text"><a href="#">High Alert</a></div>
+                <div class="walk-text"><a href="#">High</a></div>
                 <div id="walk-score"></div>
             </div>
 
@@ -224,7 +224,7 @@
                             style="stroke-dashoffset: 50"/>
                 </svg>
                 <!---<div class="transit-icon"><i class="fa fa-bus" aria-hidden="true"></i></div>---->
-                <div class="transit-text"><a href="#">Medium Alert</a></div>
+                <div class="transit-text"><a href="#">Medium</a></div>
                 <div id="transit-score"></div>
             </div>
 
@@ -234,7 +234,7 @@
                     <circle cx="16" cy="16" r="15.9155" class="rating-progress js-rating-progress"/>
                 </svg>
                 <!----<div class="bike-icon"><i class="fa fa-bicycle" aria-hidden="true"></i></div>------>
-                <div class="bike-text"><a href="#">Low Alert</a></div>
+                <div class="bike-text"><a href="#">Low</a></div>
                 <div id="bike-score"></div>
             </div>
         </div>
@@ -257,10 +257,10 @@
                         <a href="#addEmployeeModal" class="" data-toggle="modal">
                             <button type="button" class="rounded-circle btn-add">+</button>
                         </a>
-                        <div class="search-box">
+                        <!---<div class="search-box">
                             <i class="material-icons">&#xE8B6;</i>
                             <input type="text" class="form-control" placeholder="Search&hellip;">
-                        </div>
+                        </div>------->
                     </div>
                 </div>
             </div>

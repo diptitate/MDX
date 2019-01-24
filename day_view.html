@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Day view</title>
     <meta charset="utf-8">
@@ -12,17 +11,9 @@
     <link rel="stylesheet" href="css/bootstrap-multiselect.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"
           type="text/css"/>
+
     <link href="css/daterangepicker.css" rel="stylesheet" type="text/css"/>
-
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/daterangepicker.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/daterangepicker.js"></script>
-
 </head>
 <body style="background: #f1f1f1">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark bootstrap-navabr-dark">
@@ -34,10 +25,10 @@
         </button>
         <div class="collapse navbar-collapse" id="bootstrap-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
 
-                <li class="nav-item"><a href="setting.html" class="nav-link">Settings</a></li>
-                <li class="nav-item"><a href="logout.html" class="nav-link">Log Out</a></li>
+                <li class="nav-item"><a href="doctor_profile.html" class="nav-link">Settings</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Log Out</a></li>
             </ul>
         </div>
     </div>
@@ -78,16 +69,16 @@
                         <table>
                             <tr>
                                 <td>
-                                    <div class="col-md-6 justify white">Name:</div>
+                                    <div class="col-md-offset-4 col-md-2 justify white">Name:</div>
                                 </td>
                                 <td>
                                     <div class="col-md-6 justify white">Jennifer</div>
                                 </td>
-								
+
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="col-md-6 justify white">Medical Records#:</div>
+                                    <div class="col-md-offset-4 col-md-2 justify white">Medical Records#:</div>
                                 </td>
                                 <td>
                                     <div class="col-md-6 justify white">4356009</div>
@@ -96,7 +87,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="col-md-6 justify white">Age:</div>
+                                    <div class="col-md-offset-4 col-md-2 justify white">Age:</div>
                                 </td>
                                 <td>
                                     <div class="col-md-6 justify white">30</div>
@@ -104,7 +95,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="col-md-6 justify white">Gender:</div>
+                                    <div class="col-md-offset-4 col-md-2 justify white">Gender:</div>
                                 </td>
                                 <td>
                                     <div class="col-md-6 justify white">Female</div>
@@ -112,7 +103,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="col-md-6 justify white">Primary Condition:</div>
+                                    <div class="col-md-offset-4 col-md-2 justify white">Primary Condition:</div>
                                 </td>
                                 <td>
                                     <div class="col-md-6 justify white">#hfjdjkg</div>
@@ -120,7 +111,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="col-md-6 justify white">Secondary Condition:</div>
+                                    <div class="col-md-offset-4 col-md-2 justify white">Secondary Condition:</div>
                                 </td>
                                 <td>
                                     <div class="col-md-6 justify white">#hfjdjkg</div>
@@ -128,19 +119,21 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="col-md-6 justify white">Ternary Condition:</div>
+                                    <div class="col-md-offset-4 col-md-2 justify white">Ternary Condition:</div>
                                 </td>
                                 <td>
                                     <div class="col-md-6 justify white">#hfjdjkg</div>
                                 </td>
                             </tr>
-							
+
                         </table>
-						<div class="view-button">
-							<button class="profile_button">View Profile</button>
-						</div>
+                        <div class="view-button">
+                            <a href="about.html">
+                                <button class="profile_button">View Profile</button>
+                            </a>
+                        </div>
                     </div>
-                     
+
                     <!-- END Info-Table -->
                 </div>
                 <div class="row margin-top-05">
@@ -155,7 +148,7 @@
         </div>
         <div class="col-md-9">
             <div class="profile-content">
-                <h3>Day View</h3>
+
                 <div class="col-md-12 profile-content tabs">
 
                     <ul class="tabs-thumbs tabs-thumbs-dayview">
@@ -168,419 +161,582 @@
                     <ul class="tabs-panels">
                         <li class="tabs-panel">
                             <section class="">
+                                <div class="col-md-12 p0 date-section">
+                                    <!---<h3>Day View</h3>---->
+                                    <!--<div class="col-md-2">
+
+                                    </div>-->
+                                    <!----<div class="col-md-10">
+                                        <div class="flex">
+                                        <button><i class="fa fa-calendar"></i></button>
+                                        <input type="text" id="demo" class="form-control">
+                                        <i class="fa fa-angle-down" id="angle_down"></i>
+
+                                    </div>	----------->
+
+                                    <div class="col-md-12">
+                                        <div class="flex">
+                                            <!--<img src="images/icons/Calender.png" width="40px">------->
+                                            <!--<button><img src="images/icons/Calender.png" width="20px"></button>
+                                            <div class="calendar-input-wrapper">
+                                                <input id="demo">
+                                                <label for="stuff" class="fa fa-angle-down cal-icon"></label>
+                                            </div>-->
+                                            <label class="label-style mr">Date:</label>
+                                            <div class="date-picker">
+                                                <div class="input">
+                                                    <div class="result"><span></span></div>
+                                                    <button><i class="fa fa-calendar"></i></button>
+                                                </div>
+                                                <div class="calendar"></div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                </select>
+
+                                <section class="display-readings">
                                     <div class="col-md-12 p0">
-										<div class="col-md-2">
-											<label>Date:</label>
-										</div>
-										<!----<div class="col-md-10">
-											<div class="flex">
-											<button><i class="fa fa-calendar"></i></button>
-											<input type="text" id="demo" class="form-control">
-											<i class="fa fa-angle-down" id="angle_down"></i>
-											
-										</div>	----------->
-										
-										<div class="col-md-10 calendar-margin">
-											<div class="flex">
-												<button><i class="fa fa-calendar"></i></button>
-												<div class="calendar-input-wrapper">
-													<input id="demo">
-													<label for="stuff" class="fa fa-angle-down cal-icon"></label>
-												</div>
-											</div>
-										</div>
-										
-									</div>
+                                        <div class="boxes">
+                                            <div class="box">
+                                                <!---<i class="fa fa-2x fa-thermometer-quarter"></i>-------->
+                                                <img src="images/icons/Temperature.png" width="70px"/>
+                                                <div>
+                                                    <table class="box-table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="readings center">98%</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="border-top center">Temperature</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <!---<i class="fa fa-2x fa-thermometer-quarter"></i>------>
+                                                <img src="images/icons/BloodPressure.png" width="70px"/>
+                                                <div>
+                                                    <table class="box-table">
+                                                        <tbody>
 
-                            </select>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="readings center">120/80</div>
+                                                            </td>
+                                                        </tr>
 
-								<section  class="display-readings">
-									<div class="col-md-12 p0">
-										<div class="boxes">
-										    <div class="box">
-												<!---<i class="fa fa-2x fa-thermometer-quarter"></i>-------->
-												<img src="images/Temperature.png" width="60px" />
-												<div>
-													<table class="box-table">
-														<tbody>
-															<tr>
-																<td><div class="center">98%</div></td>
-															</tr>
-															<tr>
-																<td><div class="border-top center">Temperature</div></td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-											<div class="box">
-												<!---<i class="fa fa-2x fa-thermometer-quarter"></i>------>
-												<img src="images/BloodPressure.png" width="60px" />
-												<div>
-													<table class="box-table">
-														<tbody>
-                     										
-															<tr>
-																<td><div class="center">120/80</div></td>
-															</tr>
-									
-															<tr>
-																<td><div class="border-top center">BP(SYS/DIA)</div></td>
-															</tr>
-      													</tbody>
-													</table>
-												</div>
-											</div>
-											
-											<div class="box">
-												<!---<i class="fa fa-2x fa-heartbeat"></i>------>
-												<img src="images/HeartRate.png" width="60px" />
-												<div>
-													<table class="box-table"> 
-														<tbody>
-															<tr>
-																<td><div class="center">100</div></td>
-															</tr>
-															<tr>
-																<td><div class="border-top center">Heart Rate</div></td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-											
-											<div class="box">
-												<!--<i class="fa fa-2x fa-thermometer-quarter"></i>---->
-												<img src="images/SpO2.png" width="60px" />
-												<div>
-													<table class="box-table">
-														<tbody>
-															<tr>
-																<td><div class="center">96%</div></td>
-															</tr>
-															<tr>
-																<td><div class="border-top center">Sp02</div></td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-											<div class="box">
-												<!----<i class="fa fa-2x fa-thermometer-quarter"></i>---------->
-												<img src="images/ECG.png" width="60px" />
-												<div>
-													<table class="box-table">
-														<tbody>
-															<tr>
-																<td><div class="center">16</div></td>
-															</tr>
-															<tr>
-																<td><div class="border-top center">Resp Rate</div></td>
-															</tr>
-														</tbody>
-							
-													</table>
-												</div>
-											</div>
-											<div class="box">
-												<!----<i class="fa fa-2x fa-thermometer-quarter"></i>------->
-												<img src="images/Weight.png" width="60px" />
-												<div>
-													<table class="box-table">
-														<tbody>
-															<tr>
-																<td><div class="center">62</div></td>
-															</tr>
-															<tr>
-																<td><div class="border-top center">Weight</div></td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-										
-									</div>
-								</section>
-								<section class="display-graph-section">
-									<div class="col-md-12 p0">
-										<div class="graph-and-tables">
-											<div class="patient_questionary">
-												<table class="patientq">
-													<tbody class="patientq_list">
-													<tr class="bottom">
-														<td><div class="extraPadding">Day over day changes in weight</div></td>
-														<td>+3Ibs</td>
-			                                            <div class="line"></div>
-													<tr>
-													
-													<tr class="bottom">
-														<td><div class="extraPadding">I am having chest pain or pressure</div></td>
-														<td>Yes</td>
-													<tr>
-													<tr class="bottom">
-														<td><div class="extraPadding">I am more short of breath</div></td>
-														<td>-</td>
-													<tr>
-													<tr class="bottom">
-														<td><div class="extraPadding">I wake up in the night with shortness</div></td>
-														<td>No</td>
-													<tr>
-													<tr class="bottom">
-														<td><div class="extraPadding">I have swelling in my legs</div></td>
-														<td>No</td>
-													<tr>
-													</tbody>
-												</table>
-												
-											</div>
-										</div>
-									</div>
-								</section>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="border-top center">BP(SYS/DIA)</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                            <div class="box">
+                                                <!---<i class="fa fa-2x fa-heartbeat"></i>------>
+                                                <img src="images/icons/HeartRate.png" width="70px"/>
+                                                <div>
+                                                    <table class="box-table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="readings center">100</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="border-top center">Heart Rate</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                            <div class="box">
+                                                <!--<i class="fa fa-2x fa-thermometer-quarter"></i>---->
+                                                <img src="images/icons/SpO2.png" width="70px"/>
+                                                <div>
+                                                    <table class="box-table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="readings center">96%</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="border-top center">Sp02</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <!----<i class="fa fa-2x fa-thermometer-quarter"></i>---------->
+                                                <img src="images/icons/RespiratoryRate.png" width="70px"/>
+                                                <div>
+                                                    <table class="box-table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="readings center">16</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="border-top center">Resp Rate</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <!----<i class="fa fa-2x fa-thermometer-quarter"></i>------->
+                                                <img src="images/HRV.png" width="70px"/>
+                                                <div>
+                                                    <table class="box-table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="readings center">62</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="border-top center">HRV</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <!----<i class="fa fa-2x fa-thermometer-quarter"></i>------->
+                                                <img src="images/PEF.png" width="70px"/>
+                                                <div>
+                                                    <table class="box-table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="readings center">62</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="border-top center">PEF</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <!----<i class="fa fa-2x fa-thermometer-quarter"></i>------->
+                                                <img src="images/FVC.png" width="70px"/>
+                                                <div>
+                                                    <table class="box-table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="readings center">62</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="border-top center">FVC</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <!----<i class="fa fa-2x fa-thermometer-quarter"></i>------->
+                                                <img src="images/FEV1.png" width="70px"/>
+                                                <div>
+                                                    <table class="box-table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="readings center">62</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="border-top center">FEV1</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <!----<i class="fa fa-2x fa-thermometer-quarter"></i>------->
+                                                <img src="images/FEV1_FVC.png" width="70px"/>
+                                                <div>
+                                                    <table class="box-table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="readings center">62</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="border-top center">FEV1_FVC</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </section>
+                                <section class="display-graph-section">
+                                    <div class="col-md-12 p0">
+
+                                        <div class="col-md-6">
+                                            <div class="graph-imgs">
+                                                <img src="images/Sample-2.png" width="450px" class="graph-imgs1">
+                                                <div class="graph-img2">
+                                                    <img src="images/Sample3.png" width="450px" class="graph-imgs22">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 graph-and-tables">
+                                            <div class="patient_questionary">
+
+                                                <table class="patientq">
+                                                    <tbody class="patientq_list">
+                                                    <tr class="bottom">
+                                                        <td>
+                                                            <div class="extraPadding">Feeling Dizzy</div>
+                                                        </td>
+                                                        <td>--</td>
+                                                        <div class="line"></div>
+                                                    <tr>
+
+                                                    <tr class="bottom">
+                                                        <td>
+                                                            <div class="extraPadding">Feeling Tired</div>
+                                                        </td>
+                                                        <td>Yes</td>
+                                                    <tr>
+                                                    <tr class="bottom">
+                                                        <td>
+                                                            <div class="extraPadding">Feeling Nauseous</div>
+                                                        </td>
+                                                        <td>-</td>
+                                                    <tr>
+                                                    <tr class="bottom">
+                                                        <td>
+                                                            <div class="extraPadding">Feeling Feverish</div>
+                                                        </td>
+                                                        <td>No</td>
+                                                    <tr>
+                                                    <tr class="bottom">
+                                                        <td>
+                                                            <div class="extraPadding">Feeling Restless</div>
+                                                        </td>
+                                                        <td>No</td>
+                                                    <tr>
+                                                    <tr class="bottom">
+                                                        <td>
+                                                            <div class="extraPadding">Unexpected Weight Loss</div>
+                                                        </td>
+                                                        <td>Yes</td>
+                                                    <tr>
+                                                    <tr class="bottom">
+                                                        <td>
+                                                            <div class="extraPadding">I am more short of breath</div>
+                                                        </td>
+                                                        <td>-</td>
+                                                    <tr>
+                                                    <tr class="bottom">
+                                                        <td>
+                                                            <div class="extraPadding">I am more short of breath</div>
+                                                        </td>
+                                                        <td>-</td>
+                                                    <tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </section>
+                            </section>
                         </li>
 
                         <li class="tabs-panel">
                             <div class="row">
                                 <div class="col-md-12 week-view">
-									<div class="table-wrapper">
-										<div class="table-title">
-											<div class="row">
-												<div class="col-sm-6">
-													<!---<h2>Manage <b>Employees</b></h2>------>
+                                    <!---<h3>Week View</h3>------->
+                                    <div class="table-wrapper">
+                                        <div class="table-title">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <!---<h2>Manage <b>Employees</b></h2>------>
 
-												</div>
-												<div class="col-sm-6">
-													<!---<a href="#addEmployeeModal" class="" data-toggle="modal"><img class="rounded-circle btn-add" src="images/plus.png" alt=""></a>
-						<h2 class="add-ct-btn"><button type="button" class="btn btn-circle btn-lg btn-success waves-effect waves-dark">+</button></h2>-->
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <!---<a href="#addEmployeeModal" class="" data-toggle="modal"><img class="rounded-circle btn-add" src="images/plus.png" alt=""></a>
+                        <h2 class="add-ct-btn"><button type="button" class="btn btn-circle btn-lg btn-success waves-effect waves-dark">+</button></h2>-->
 
-												</div>
-											</div>
-										</div>
-										<table class="table table-style bordered">
-											<thead>
-											<tr>
-												<th>
-													<div class="extraPadding center">Day</div>
-												</th>
-												<th>
-													<div class="extraPadding center">Temperature-In Fahrenheit</div>
-												</th>
-												<th>
-													<div class="extraPadding center">Blood pressure-In Sys/Dia</div>
-												</th>
-												<th>
-													<div class="extraPadding center">Heart rate-In bpm</div>
-												</th>
-												<th>
-													<div class="extraPadding center">Spo2- In %</div>
-												</th>
-												<th>
-													<div class="extraPadding center">Resp. Rate- In minute</div>
-												</th>
-												<th>
-													<div class="extraPadding center">Weight- In lb</div>
-												</th>
-											</tr>
-											<!---<tr>
-												<th style="">
-													<div class="extraPadding">(in Fahrenheit)</div>
-												</th>
-												<th class="center" style="">
-													<div class="extraPadding">(in Sys/Dia)</div>
-												</th>
-												<th class="center" style="">
-													<div class="extraPadding">(in bpm)</div>
-												</th>
-												<th class="center" style="">
-													<div class="extraPadding">(in %)</div>
-												</th>
-												<th style="">
-													<div class="extraPadding">(in minute)</div>
-												</th>
-												<th style="">
-													<div class="extraPadding">(in lb)</div>
-												</th>
-											</tr>------>
-											</thead>
-											<tbody>
-											<tr>
-												<td>
-													<div class="label-extraPadding label-threshold center">
-														<label>1 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">120/180</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">96</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">16</div>
-												</td>
-												<td>
-													<div class="center">62</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding label-threshold center">
-														<label>2 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>3 Jan</label>
-													</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">98</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">112/180</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">85</div>
-												</td>
-												<td>
-													<div class="center">11</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">50</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>4 Jan</label>
-													</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">104</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">120/180</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">96</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">16</div>
-												</td>
-												<td>
-													<div class="center">62</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>5 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>6 Jan</label>
-													</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">98</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">112/180</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">85</div>
-												</td>
-												<td>
-													<div class="center">11</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">50</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>7 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											</tbody>
-										</table>
-									</div>	
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="table table-style bordered">
+                                            <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="extraPadding center">Week</div>
+                                                </th>
+                                                <th>
+                                                    <div class="extraPadding center">Temperature <span
+                                                            class="measurement_displays">Fahrenheit</span></div>
+                                                </th>
+                                                <th>
+                                                    <div class="extraPadding center">Blood pressure <span
+                                                            class="measurement_displays">Sys/Dia</span></div>
+                                                </th>
+                                                <th>
+                                                    <div class="extraPadding center">Heart rate <span
+                                                            class="measurement_displays">Bpm</span></div>
+                                                </th>
+                                                <th>
+                                                    <div class="extraPadding center">Spo2 <span
+                                                            class="measurement_displays">%</span></div>
+                                                </th>
+                                                <th>
+                                                    <div class="extraPadding center">Resp.Rate <span
+                                                            class="measurement_displays">Minute</span></div>
+                                                </th>
+                                                <th>
+                                                    <div class="extraPadding center">Weight <span
+                                                            class="measurement_displays">lb</span></div>
+                                                </th>
+                                            </tr>
+                                            <!---<tr>
+                                                <th style="">
+                                                    <div class="extraPadding">(in Fahrenheit)</div>
+                                                </th>
+                                                <th class="center" style="">
+                                                    <div class="extraPadding">(in Sys/Dia)</div>
+                                                </th>
+                                                <th class="center" style="">
+                                                    <div class="extraPadding">(in bpm)</div>
+                                                </th>
+                                                <th class="center" style="">
+                                                    <div class="extraPadding">(in %)</div>
+                                                </th>
+                                                <th style="">
+                                                    <div class="extraPadding">(in minute)</div>
+                                                </th>
+                                                <th style="">
+                                                    <div class="extraPadding">(in lb)</div>
+                                                </th>
+                                            </tr>------>
+                                            </thead>
+                                            <tbody class="week_view_data">
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding label-threshold center">
+                                                        <label class="label-style">1 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td class="bg-high">
+                                                    <div class="center">124/90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">89</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">96</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">16</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">62</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding label-threshold center">
+                                                        <label class="label-style">2 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">105/70</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">95</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td class="bg-high">
+                                                    <div class="center">120</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">3 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td class="bg-low">
+                                                    <div class="center">98</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">112/76</div>
+                                                </td>
+                                                <td class="bg-high">
+                                                    <div class="center">110</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">95</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">11</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">50</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">4 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">120/70</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">78</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">96</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">16</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">62</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">5 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td class="bg-low">
+                                                    <div class="center">90/60</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">87</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">55</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">6 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">99</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">112/75</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">86</div>
+                                                </td>
+                                                <td class="bg-low">
+                                                    <div class="center">82</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">11</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">50</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">7 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td class="bg-high">
+                                                    <div class="center">104</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">115/86</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">79</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">55</div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
 
                             </div>
@@ -590,670 +746,677 @@
                         <li class="tabs-panel">
                             <div class="row">
                                 <div class="col-md-12 month-view" id="month_view">
-									<div class="table-wrapper">
-										<div class="table-title">
-											<div class="row">
-												<div class="col-sm-6">
-													<!---<h2>Manage <b>Employees</b></h2>------>
+                                    <!---<h3>Month View</h3>  -------->
+                                    <div class="table-wrapper">
+                                        <div class="table-title">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <!---<h2>Manage <b>Employees</b></h2>------>
 
-												</div>
-												<div class="col-sm-6">
-													<!---<a href="#addEmployeeModal" class="" data-toggle="modal"><img class="rounded-circle btn-add" src="images/plus.png" alt=""></a>
-						<h2 class="add-ct-btn"><button type="button" class="btn btn-circle btn-lg btn-success waves-effect waves-dark">+</button></h2>-->
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <!---<a href="#addEmployeeModal" class="" data-toggle="modal"><img class="rounded-circle btn-add" src="images/plus.png" alt=""></a>
+                        <h2 class="add-ct-btn"><button type="button" class="btn btn-circle btn-lg btn-success waves-effect waves-dark">+</button></h2>-->
 
-												</div>
-											</div>
-										</div>
-										<table class="table table-style bordered table-fixed">
-											<thead>
-											<tr>
-												<th>
-													<div class="extraPadding center">Day</div>
-												</th>
-												<th>
-													<div class="extraPadding center">Temperature- In Fahrenheit</div>
-												</th>
-												<th>
-													<div class="extraPadding center">Blood pressure- In Sys/Dia</div>
-												</th>
-												<th>
-													<div class="extraPadding center">Heart rate- In bpm</div>
-												</th>
-												<th>
-													<div class="extraPadding center">Spo2- In %</div>
-												</th>
-												<th>
-													<div class="extraPadding center">Resp. Rate- In minute</div>
-												</th>
-												<th>
-													<div class="extraPadding center">Weight- In lb</div>
-												</th>
-											</tr>
-											<!-----<tr>
-												<th style="">
-													<div class="extraPadding">(in Fahrenheit)</div>
-												</th>
-												<th class="center" style="">
-													<div class="extraPadding">(in Sys/Dia)</div>
-												</th>
-												<th class="center" style="">
-													<div class="extraPadding">(in bpm)</div>
-												</th>
-												<th class="center" style="">
-													<div class="extraPadding">(in %)</div>
-												</th>
-												<th style="">
-													<div class="extraPadding">(in minute)</div>
-												</th>
-												<th style="">
-													<div class="extraPadding">(in lb)</div>
-												</th>
-											</tr>--------->
-											</thead>
-											<tbody>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>8 Jan</label>
-													</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">104</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">120/180</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">96</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">16</div>
-												</td>
-												<td>
-													<div class="center">62</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>9 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>10 Jan</label>
-													</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">98</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">112/180</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">85</div>
-												</td>
-												<td>
-													<div class="center">11</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">50</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>11 Jan</label>
-													</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">104</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">120/180</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">96</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">16</div>
-												</td>
-												<td>
-													<div class="center">62</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>12 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>13 Jan</label>
-													</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">98</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">112/180</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">85</div>
-												</td>
-												<td>
-													<div class="center">11</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">50</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>14 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>15 Jan</label>
-													</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">104</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">120/180</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">96</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">16</div>
-												</td>
-												<td>
-													<div class="center">62</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>16 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>17 Jan</label>
-													</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">98</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">112/180</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">85</div>
-												</td>
-												<td>
-													<div class="center">11</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">50</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>18 Jan</label>
-													</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">104</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">120/180</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">96</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">16</div>
-												</td>
-												<td>
-													<div class="center">62</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>19 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>20 Jan</label>
-													</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">98</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">112/180</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">85</div>
-												</td>
-												<td>
-													<div class="center">11</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">50</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>21 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>22 Jan</label>
-													</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">104</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">120/180</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">96</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">16</div>
-												</td>
-												<td>
-													<div class="center">62</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>23 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>24 Jan</label>
-													</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">98</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">112/180</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">85</div>
-												</td>
-												<td>
-													<div class="center">11</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">50</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>25 Jan</label>
-													</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">104</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">120/180</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">96</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">16</div>
-												</td>
-												<td>
-													<div class="center">62</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>26 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>27 Jan</label>
-													</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">98</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">112/180</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">85</div>
-												</td>
-												<td>
-													<div class="center">11</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">50</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>28 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>29 Jan</label>
-													</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">104</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">120/180</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">96</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">16</div>
-												</td>
-												<td>
-													<div class="center">62</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>30 Jan</label>
-													</div>
-												</td>
-												<td>
-													<div class="center">100</div>
-												</td>
-												<td>
-													<div class="center">115/180</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">95</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td>
-													<div class="center">13</div>
-												</td>
-												<td>
-													<div class="center">55</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="label-extraPadding center">
-														<label>31 Jan</label>
-													</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">98</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">112/180</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">90</div>
-												</td>
-												<td class="bg-low">
-													<div class="center">85</div>
-												</td>
-												<td>
-													<div class="center">11</div>
-												</td>
-												<td class="bg-high">
-													<div class="center">50</div>
-												</td>
-											</tr>
-											</tbody>
-										</table>
-									</div>	
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="table table-style bordered table-fixed">
+                                            <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="extraPadding center">Month</div>
+                                                </th>
+                                                <th>
+                                                    <div class="extraPadding center">Temperature <span
+                                                            class="measurement_displays">Fahrenheit</span></div>
+                                                </th>
+                                                <th>
+                                                    <div class="extraPadding center">Blood pressure <span
+                                                            class="measurement_displays">Sys/Dia</span></div>
+                                                </th>
+                                                <th>
+                                                    <div class="extraPadding center">Heart rate <span
+                                                            class="measurement_displays">Bpm</span></div>
+                                                </th>
+                                                <th>
+                                                    <div class="extraPadding center">Spo2 <span
+                                                            class="measurement_displays">%</span></div>
+                                                </th>
+                                                <th>
+                                                    <div class="extraPadding center">Resp.Rate <span
+                                                            class="measurement_displays">Minute</span></div>
+                                                </th>
+                                                <th>
+                                                    <div class="extraPadding center">Weight <span
+                                                            class="measurement_displays">lb</span></div>
+                                                </th>
+                                            </tr>
+                                            <!-----<tr>
+                                                <th style="">
+                                                    <div class="extraPadding">(in Fahrenheit)</div>
+                                                </th>
+                                                <th class="center" style="">
+                                                    <div class="extraPadding">(in Sys/Dia)</div>
+                                                </th>
+                                                <th class="center" style="">
+                                                    <div class="extraPadding">(in bpm)</div>
+                                                </th>
+                                                <th class="center" style="">
+                                                    <div class="extraPadding">(in %)</div>
+                                                </th>
+                                                <th style="">
+                                                    <div class="extraPadding">(in minute)</div>
+                                                </th>
+                                                <th style="">
+                                                    <div class="extraPadding">(in lb)</div>
+                                                </th>
+                                            </tr>--------->
+                                            </thead>
+                                            <tbody class="month_view_data">
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding label-threshold center">
+                                                        <label class="label-style">8 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">112/80</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">89</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">96</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">16</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">62</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding label-threshold center">
+                                                        <label class="label-style">9 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">105/70</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">95</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">7-0</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">10 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">97</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">112/76</div>
+                                                </td>
+                                                <td class="bg-high">
+                                                    <div class="center">110</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">95</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">11</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">50</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">11 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">120/70</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">78</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">96</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">16</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">62</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">12 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td class="bg-low">
+                                                    <div class="center">90/60</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">87</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">55</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">13 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">99</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">112/75</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">86</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">85</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">11</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">50</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">14 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td class="bg-high">
+                                                    <div class="center">104</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">115/86</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">79</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">55</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding label-threshold center">
+                                                        <label class="label-style">15 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">120/70</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">89</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">96</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">16</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">62</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding label-threshold center">
+                                                        <label class="label-style">16 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">105/70</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">95</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td class="bg-high">
+                                                    <div class="center">120</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">17 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">99</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">112/76</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">96</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">95</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">11</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">50</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">18 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">120/70</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">78</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">96</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">16</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">62</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">19 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">110/75</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">87</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">55</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">20 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">99</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">112/75</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">86</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">86</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">11</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">50</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">21 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td class="bg-high">
+                                                    <div class="center">104</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">115/86</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">79</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">55</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding label-threshold center">
+                                                        <label class="label-style">22 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td class="bg-high">
+                                                    <div class="center">124/90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">89</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">96</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">16</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">62</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding label-threshold center">
+                                                        <label class="label-style">23 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">105/70</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">95</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">60</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">24 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">96</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">112/76</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">93</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">95</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">11</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">50</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">25 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">120/70</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">78</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">96</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">16</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">62</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">26 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">100</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">126/80</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">87</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">55</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">27 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">99</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">112/75</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">86</div>
+                                                </td>
+                                                <td class="bg-low">
+                                                    <div class="center">82</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">11</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">50</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">28 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">93</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">115/86</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">79</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">55</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">29 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">94</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">115/86</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">79</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">55</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">30 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">91</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">115/86</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">79</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">55</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="label-extraPadding center">
+                                                        <label class="label-style">31 Jan</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">99</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">115/86</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">79</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">90</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">13</div>
+                                                </td>
+                                                <td>
+                                                    <div class="center">55</div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -1290,11 +1453,12 @@
     </div>
 </footer>
 <script src="js/jquery-3.3.1.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
 <script src="js/moment.min.js"></script>
-<script src="js/daterangepicker.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datetimepicker.js"></script>
+<!--<script src="js/daterangepicker.js"></script>-->
 
 <script>
     $(function () {
@@ -1310,19 +1474,146 @@
     });
 
     /*Date and time Picker Code*/
-    $('#demo').daterangepicker({
-        "timePicker": true,
-        "ranges"    : {
+
+    var initToday = new Date();
+    var dd = initToday.getDate();
+    var mm = initToday.getMonth() + 1; //January is 0!
+
+    var yyyy = initToday.getFullYear();
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+    if (mm < 10) {
+        mm = '0' + mm;
+    }
+    var initToday = dd + '-' + mm + '-' + yyyy;
+
+    $(".calendar").datepicker({
+        defaultDate: initToday,
+        dateFormat : 'dd-mm-yy'
+        // firstDay  : 1
+    });
+
+    // $( ".calendar" ).datepicker( "setDate", initToday );
+
+    $(document).on('click', '.date-picker .input', function (e) {
+        var $me = $(this),
+            $parent = $me.parents('.date-picker');
+        $parent.toggleClass('open');
+    });
+
+    $(".calendar").parents('.date-picker').find('.result').children('span').html(initToday);
+
+    init();
+
+    function init() {
+        var newHTMLData = "";
+        for (i = 0; i < 30; i++) {
+            var today = new Date(initToday.replace(/(\d{2})-(\d{2})-(\d{4})/, "$2/$1/$3"));
+            today = today.setDate(today.getDate() - i);
+            today = new Date(today).toDateString();
+            splitToday = today.split(' ');
+            newDate = splitToday[2] + ' ' + splitToday[1];
+            console.log(today);
+            newHTMLData += '<tr>\n' +
+                '                                                <td>\n' +
+                '                                                    <div class="label-extraPadding label-threshold center">\n' +
+                '                                                        <label class="label-style">' + newDate + '</label>\n' +
+                '                                                    </div>\n' +
+                '                                                </td>\n' +
+                '                                                <td>\n' +
+                '                                                    <div class="center">100</div>\n' +
+                '                                                </td>\n' +
+                '                                                <td class="bg-high">\n' +
+                '                                                    <div class="center">124/90</div>\n' +
+                '                                                </td>\n' +
+                '                                                <td>\n' +
+                '                                                    <div class="center">89</div>\n' +
+                '                                                </td>\n' +
+                '                                                <td>\n' +
+                '                                                    <div class="center">96</div>\n' +
+                '                                                </td>\n' +
+                '                                                <td>\n' +
+                '                                                    <div class="center">16</div>\n' +
+                '                                                </td>\n' +
+                '                                                <td>\n' +
+                '                                                    <div class="center">62</div>\n' +
+                '                                                </td>\n' +
+                '                                            </tr>';
+            if (i === 6) {
+                $('.week_view_data').html(newHTMLData);
+            }
+        }
+
+        $('.month_view_data').html(newHTMLData);
+    }
+
+    $(".calendar").on("change", function () {
+        var $me = $(this),
+            $selected = $me.val(),
+            $parent = $me.parents('.date-picker');
+        $parent.find('.result').children('span').html($selected);
+        $parent.toggleClass('open');
+
+        var newHTMLData = "";
+        for (i = 0; i < 30; i++) {
+            var today = new Date($selected.replace(/(\d{2})-(\d{2})-(\d{4})/, "$2/$1/$3"));
+            today = today.setDate(today.getDate() - i);
+            today = new Date(today).toDateString();
+            splitToday = today.split(' ');
+            newDate = splitToday[2] + ' ' + splitToday[1];
+            console.log(today);
+            newHTMLData += '<tr>\n' +
+                '                                                <td>\n' +
+                '                                                    <div class="label-extraPadding label-threshold center">\n' +
+                '                                                        <label class="label-style">' + newDate + '</label>\n' +
+                '                                                    </div>\n' +
+                '                                                </td>\n' +
+                '                                                <td>\n' +
+                '                                                    <div class="center">100</div>\n' +
+                '                                                </td>\n' +
+                '                                                <td class="bg-high">\n' +
+                '                                                    <div class="center">124/90</div>\n' +
+                '                                                </td>\n' +
+                '                                                <td>\n' +
+                '                                                    <div class="center">89</div>\n' +
+                '                                                </td>\n' +
+                '                                                <td>\n' +
+                '                                                    <div class="center">96</div>\n' +
+                '                                                </td>\n' +
+                '                                                <td>\n' +
+                '                                                    <div class="center">16</div>\n' +
+                '                                                </td>\n' +
+                '                                                <td>\n' +
+                '                                                    <div class="center">62</div>\n' +
+                '                                                </td>\n' +
+                '                                            </tr>';
+            if (i === 6) {
+                $('.week_view_data').html(newHTMLData);
+            }
+        }
+
+        $('.month_view_data').html(newHTMLData);
+    });
+
+    /*$("#demo").datepicker({
+        dateFormat: 'dd/mm/yy',
+        firstDay  : 1
+    });*/
+    /*$('#demo').daterangepicker({
+        "timePicker"      : true,
+        "singleDatePicker": true,
+        "ranges"          : {
             "Today"       : [new Date, new Date],
             "Yesterday"   : [moment().subtract(1, "days"), moment().subtract(1, "days")],
             "Last 7 Days" : [moment().subtract(6, "days"), new Date],
             "Last 30 Days": [moment().subtract(29, "days"), new Date],
             "This Month"  : [moment().startOf("month"), moment().endOf("month")],
-            "Last Month"  : [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")]
+            "Last Month"  : [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
         },
-        "startDate" : moment().startOf('hour') - 2,
-        "endDate"   : moment().startOf('hour').add(32, 'hour'),
-        locale      : {
+        "startDate"       : moment().startOf('hour') - 2,
+        "endDate"         : moment().startOf('hour').add(32, 'hour'),
+        locale            : {
             format: 'YYYY-MM-DD hh:mm A'
         }
     }, function (start, end, label) {
@@ -1330,7 +1621,7 @@
         console.log(end);
         console.log(label);
         console.log("New date range selected: '" + start.format('YYYY-MM-DD') + " '" + start.format('hh:mm') + "to '" + end.format('YYYY-MM-DD') + " '" + end.format('hh:mm') + "' (predefined range: '" + label + "')");
-    });
+    });*/
 
     /*Login Count Up Timer*/
     var minutesLabel = document.getElementById("login_minutes");
@@ -1354,8 +1645,9 @@
             return valString;
         }
     }
-	
+
 </script>
 
 </body>
+
 </html>
