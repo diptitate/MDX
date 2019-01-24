@@ -1297,16 +1297,16 @@
 
 <script>
 
-    var rating = [2, 5, 16]
-    var ratingBar = document.querySelectorAll(".js-rating-progress")
+    var rating = [2, 5, 16];
+    var ratingBar = document.querySelectorAll(".js-rating-progress");
 
-    document.querySelector('#walk-score').innerHTML = rating[0]
-    document.querySelector('#transit-score').innerHTML = rating[1]
-    document.querySelector('#bike-score').innerHTML = rating[2]
+    document.querySelector('#walk-score').innerHTML = rating[0];
+    document.querySelector('#transit-score').innerHTML = rating[1];
+    document.querySelector('#bike-score').innerHTML = rating[2];
 
-    document.querySelector('.walk-container .js-rating-progress').style.strokeDashoffset = 25 - rating[0]
-    document.querySelector('.transit-container .js-rating-progress').style.strokeDashoffset = 25 - rating[1]
-    document.querySelector('.bike-container .js-rating-progress').style.strokeDashoffset = 25 - rating[2]
+    document.querySelector('.walk-container .js-rating-progress').style.strokeDashoffset = 25 - rating[0];
+    document.querySelector('.transit-container .js-rating-progress').style.strokeDashoffset = 25 - rating[1];
+    document.querySelector('.bike-container .js-rating-progress').style.strokeDashoffset = 25 - rating[2];
 
     for (i = 0; i < ratingBar.length; i++) {
         if (rating[i] <= 2) {
@@ -1330,19 +1330,19 @@
             high.className += "switch high";
             setTimeout(function () {
                 low.className += "switch low active";
-            }, 300);
+            }, 100);
         } else if (period === "medium") {
             low.className += "switch low";
             high.className += "switch high";
             setTimeout(function () {
                 medium.className += "switch medium active";
-            }, 300);
+            }, 100);
         } else {
             low.className += "switch low";
             medium.className += "switch medium";
             setTimeout(function () {
                 high.className += "switch high active";
-            }, 300);
+            }, 100);
         }
     }
 </script>
