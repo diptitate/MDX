@@ -63,7 +63,7 @@ input, textarea {
         }
 input:focus {
             outline: none;
-        }		
+        }
 
 
         /* BOTTOM BARS ================================= */
@@ -156,16 +156,16 @@ input:focus {
                 width: 0;
                 background: transparent;
             }
-        }		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+        }
+
+
+
+
+
+
+
+
+
 .right {
     text-align: right;
 }
@@ -335,7 +335,7 @@ input:focus {
 
 /*-----------------------------logi form--------------------------------*/
 .login-section {
-    background-image: url(../images/Device_large1.png);
+    background-image: url(../images/MDx-DeviceImage1.png);
     background-repeat: no-repeat;
     /* background-size: 30% 100%;  */
     background-position: 10% 20%;
@@ -441,9 +441,9 @@ input:focus {
 textarea {
     height: inherit !important;
     font-size: 18px;
-    padding: 10px 10px 0px 5px;
+    padding: 49px 50px 5px 5px;
     display: block;
-    width: 345px;
+    width: 445px;
     background: #f9f9f9;
     border: none;
     outline: 0 none;
@@ -451,7 +451,7 @@ textarea {
 }
 
 .textarea-background {
-    background: transparent;
+    /*--background: transparent;-----*/
 }
 .textarea-background:hover{
 	background: #f2f2f2;
@@ -459,7 +459,8 @@ textarea {
 
 /*form styles*/
 .account-steps {
-    background-image: url(../images/Device_large2.png);
+   /*---- background-image: url(../images/Device_large2.png);   ----*/
+   background-image: url(../images/MDx-DeviceImage1.png);
     background-repeat: no-repeat;
     /* background-size: 30% 75%; */
     background-position: 10% 87%;
@@ -522,6 +523,9 @@ textarea {
 }
 
 /*buttons*/
+#msform .button-center{
+	text-align: -webkit-center;
+}
 #msform .action-button {
     width: 100px;
     background: #4386fc;
@@ -531,7 +535,7 @@ textarea {
     border-radius: 25px;
     cursor: pointer;
     padding: 10px 5px;
-    margin: 10px 5px;
+    margin: 10px auto;
 }
 
 #msform .action-button:hover, #msform .action-button:focus {
@@ -547,7 +551,8 @@ textarea {
     border-radius: 25px;
     cursor: pointer;
     padding: 10px 5px;
-    margin: 10px 5px;
+    /*---margin: 10px 5px;--------*/
+	margin: 10px 60px;
 }
 
 #msform .action-button-previous:hover, #msform .action-button-previous:focus {
@@ -714,7 +719,7 @@ textarea {
 /*------------chart--------------*/
 .rating-container {
     position: relative;
-    padding: 46px 155px;
+    padding: 46px 215px;
 }
 
 .rating-container .walk-container,
@@ -727,7 +732,7 @@ textarea {
     background: #fff;
     border-radius: 50%;
     box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
-    margin: 0 23px;
+    margin: 0 10px;
 }
 
 .rating-container .walk-container a,
@@ -767,7 +772,8 @@ textarea {
 
 .rating-container svg .rating-progress {
     fill: none;
-    stroke: #0093C7;
+    /*---stroke: #0093C7;-----*/
+	stroke: #4FC3F7;
     stroke-dasharray: 100 100;
     stroke-dashoffset: 100;
     stroke-linecap: square;
@@ -779,7 +785,7 @@ textarea {
 
 .rating-container svg .under-7 {
     /*---stroke: #f2f2f2;-------*/
-    stroke: #EB4000;
+    stroke: #2962FF;
     fill: #f9f9f9;
     stroke-dasharray: 37 100;
     stroke-dashoffset: 71;
@@ -931,14 +937,14 @@ table.table td i {
 	border-left: 6px solid #C8C8C8;
 }----*/
 .low-alert td div {
-    background: #f9f9f9;
+    /*---background: #f9f9f9;-------*/
 }
 
 /*---.medium-alert{
 	border-left: 6px solid #0093C7;
 }------*/
 .medium-alert td div {
-    background: #EBFAFF;
+    /*---background: #EBFAFF;---*/
 }
 
 /*---.high-alert{
@@ -946,7 +952,7 @@ table.table td i {
 	
 }-----*/
 .high-alert td div {
-    background: #FFECE5;
+
     z-index: 22;
 }
 
@@ -964,11 +970,11 @@ table.table td i {
 }
 
 .medium-alert .rounded-circle {
-    border: 3px solid #ff944d;
+    border: 3px solid #4FC3F7;
 }
 
 .high-alert .rounded-circle {
-    border: 3px solid #EB4000;
+    border: 3px solid #2962FF;
 }
 
 .on-switch-button, .off-switch-button {
@@ -1030,6 +1036,9 @@ table.table td i {
     background: #f2f2f2;
     /*---background: #656565;
     color: #fff;------*/
+}
+.table-wrapper table.table thead.thead-background{
+	background: #3DADB3;
 }
 
 table.table tr th, table.table tr td {
@@ -1344,8 +1353,8 @@ table.table .avatar {
 
 .threshold_table .label-extraPadding {
     padding: 14px
-}	
-label{
+}
+label.form-label{
 	 color: #999;
 	 font-family: "Open Sans", sans-serif;
      line-height: 1.8;
@@ -1361,8 +1370,8 @@ label{
 }
 #login_hours, #login_minutes, #login_seconds {
 	color: #fff;
-}	
-.threshold_table label, .week-view label{
+}
+.threshold_table label.label-style, .week-view label.label-style{
 	 color: #999;
             font-size: 18px;
             font-weight: normal;
@@ -1392,7 +1401,7 @@ table.table tr th,
         table.table tr td {
             padding: 0;
             /*---background: #f9f9f9;---*/
-        }		
+        }
 /*----------------Day View-------------*/
 .p0{
 	padding: 0;
@@ -1413,17 +1422,21 @@ table.table tr th,
 	margin: 0px;
 }
 .display-readings{
-	padding-top: 80px;
+	padding-top: 140px;
 }
 .display-graph-section{
-	padding-top: 140px;
+	padding-top: 175px;
+}
+span.measurement_displays{
+	font-size: 14px;
+	font-weight: normal;
 }
 
 /* Profile sidebar */
         .profile-sidebar {
-            height: 725px;
+            height: 900px;
            /* background: #656565; */
-		   background: 	#A2C776;
+		   background: 	#3DADB3;
 			position: relative;
 			top: -23px;
         }
@@ -1436,7 +1449,11 @@ table.table tr th,
         .justify {
             text-align: justify;
         }
-
+        .patient-profile-img img{
+			background: #fff;
+    border: 1px solid #1e88e5;
+    border-radius: 50%;
+		}
         .profile-usertitle {
             text-align: center;
             margin-top: 20px;
@@ -1459,7 +1476,7 @@ table.table tr th,
 
         .patient-info {
             text-align: center;
-            margin: 10% 6%;
+            margin: 10% 0%;
         }
 
         .patient-info .btn {
@@ -1522,11 +1539,16 @@ table.table tr th,
             text-align: center;
             color: #fff
         }
-
+.date-section{
+	margin: 40px 0px;
+}
+.graph-imgs1, .graph-imgs22{
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
 .box{
 	position: relative;
     float: left;
-    width: 133px;
+    width: 87px;
     margin: 0 10px 0 0;
     opacity: .8;
     border: 1px solid #ccc;
@@ -1539,21 +1561,26 @@ table.table tr th,
     /*--border-radius: 10px;----*/
 }
 .box-table{
-	width: 132px;
+	width: 87px;
+}
+.readings{
+	color: #3DADB3;
+	font-size: 28px;
 }
 .border-top{
-	border-top: 1px solid gainsboro;
+	font-size: 13px;
+	border-top: 1px solid #3DADB3;
 }
 
 .patient_questionary{
 	color: #fff;
     position: relative;
-    float: left;
+    /*---left: 112%;------*/
     width: 100%;
     /* margin: 0 10px 0 0; */
     opacity: .8;
     /*--border: 1px solid #ccc;---*/
-    background: #4d4d4d;
+    background: #64A8EB;
     padding: 15px;
     display: grid;
 	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
@@ -1561,11 +1588,14 @@ table.table tr th,
     border-radius: 3px;
 }
 .graph-and-tables{
-	width: 400px;
+	width: 390px;
 }
 .graph-and-tables .line{
 	width: 300px;
 	color: #fff;
+}
+.graph-img2{
+	margin: 25px 0px;
 }
 .bottom{
 	border-bottom: 1px solid #fff;
@@ -1577,7 +1607,7 @@ table.table tr th,
 	position: absolute;
     left: 218px;
     top: 24%;
-	
+
 }
 .view-button{
 	margin: 22px 0px;
@@ -2065,7 +2095,7 @@ table.table tr th,
 	width: 120px;
 }
 .prescription_textbox{
-	border: 1px solid #f1f1f1;
+	border: 1px solid transparent;
     border-radius: 10px;
 }
 .calendar-input-wrapper{
@@ -2079,7 +2109,7 @@ table.table tr th,
 .cal-icon{
 	position: absolute;
 	left: 95%;
-  top: calc(50% - 0.5em); 
+  top: calc(50% - 0.5em);
 }
 /*-----------Doctor Profile---------------*/
 .doctor-profile{
@@ -2111,7 +2141,22 @@ table.table tr th,
     font-size: 23px;
     /* box-shadow: 0 14px 26px -12px rgba(40, 190, 189, 0), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px; */
 }
+.radio-label, .checkbox-label{
+	color:none;
+    font-family: "Open Sans", sans-serif;
+    line-height: 0.8;
+    font-size: 16px;
+    font-weight: normal;
+   top: 0;
+   left: 0;
+   webkit-transition: none;
 
+}
+.radio-style, .checkbox-style{
+	bottom: 0;
+    left: -72px;
+    position: relative;
+}
 
 
 
@@ -2210,7 +2255,7 @@ position: absolute;-----*/
 }
 
 .week-view .bg-high, .month-view .bg-high{
-    background-color: #e6412c;
+    background-color: #3DADB3;
 }
 
 .week-view .bg-low, .month-view .bg-low{
@@ -2308,4 +2353,158 @@ position: absolute;-----*/
 
 @media only screen and (min-width: 768px) {
 
+}
+
+body {
+    background: #f7f6f3;
+    font-family: sans-serif;
+}
+
+.date-picker {
+    /*margin: 200px auto;*/
+}
+
+.date-picker {
+    width: 260px;
+    height: auto;
+    max-height: 50px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s 0s ease-in-out;
+}
+.date-picker .input {
+    width: 100%;
+    height: 50px;
+    font-size: 0;
+    cursor: pointer;
+}
+.date-picker .input .result, .date-picker .input button {
+    display: inline-block;
+    vertical-align: top;
+}
+.date-picker .input .result {
+    width: calc(100% - 50px);
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: grey;
+    box-sizing: border-box;
+}
+.date-picker .input button {
+    width: 50px;
+    height: 50px;
+    background-color: #8392A7;
+    color: white;
+    line-height: 50px;
+    border: 0;
+    font-size: 18px;
+    padding: 0;
+}
+.date-picker .input button:hover {
+    background-color: #68768A;
+}
+.date-picker .input button:focus {
+    outline: 0;
+}
+.date-picker .calendar {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border-radius: 0px;
+    overflow: hidden;
+}
+.date-picker .ui-datepicker-inline {
+    position: relative;
+    width: 100%;
+}
+.date-picker .ui-datepicker-header {
+    height: 100%;
+    line-height: 50px;
+    background: #8392A7;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.date-picker .ui-datepicker-prev, .date-picker .ui-datepicker-next {
+    width: 20px;
+    height: 20px;
+    text-indent: 9999px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 12px;
+}
+.date-picker .ui-datepicker-prev {
+    float: left;
+    margin-left: 12px;
+}
+.date-picker .ui-datepicker-prev:after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: -43px 0px 0px 8px;
+}
+.date-picker .ui-datepicker-next {
+    float: right;
+    margin-right: 12px;
+}
+.date-picker .ui-datepicker-next:after {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    margin: -43px 0px 0px 6px;
+}
+.date-picker .ui-datepicker-prev:after, .date-picker .ui-datepicker-next:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.date-picker .ui-datepicker-prev:hover, .date-picker .ui-datepicker-next:hover, .date-picker .ui-datepicker-prev:hover:after, .date-picker .ui-datepicker-next:hover:after {
+    border-color: #68768A;
+}
+.date-picker .ui-datepicker-title {
+    text-align: center;
+}
+.date-picker .ui-datepicker-calendar {
+    width: 100%;
+    text-align: center;
+}
+.date-picker .ui-datepicker-calendar thead tr th span {
+    display: block;
+    width: 100%;
+    color: #8392A7;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.date-picker .ui-state-default {
+    display: block;
+    text-decoration: none;
+    color: #b5b5b5;
+    line-height: 40px;
+    font-size: 12px;
+}
+.date-picker .ui-state-default:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+.date-picker .ui-state-highlight {
+    color: #68768A;
+}
+.date-picker .ui-state-active {
+    color: #68768A;
+    background-color: rgba(131, 146, 167, 0.12);
+    font-weight: 600;
+}
+.date-picker .ui-datepicker-unselectable .ui-state-default {
+    color: #eee;
+    border: 2px solid transparent;
+}
+.date-picker.open {
+    max-height: 400px;
+}
+.date-picker.open .input button {
+    background: #68768A;
 }
